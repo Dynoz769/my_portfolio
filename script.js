@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const reveals = document.querySelectorAll('.reveal');
     const typing = document.querySelector('.typing-effect');
     const themeToggle = document.getElementById('theme-toggle');
-    const motionToggle = document.getElementById('motion-toggle');
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
     const phrases = [
@@ -26,27 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', mode);
     };
 
-    const setMotion = (state) => {
-        const reduced = state === 'off';
-        body.classList.toggle('reduced-motion', reduced);
-        if (motionToggle) motionToggle.textContent = reduced ? 'Motion Off' : 'Motion On';
-        localStorage.setItem('motion', state);
-        if (reduced && typing) {
-            typing.textContent = phrases[0];
-        }
-    };
-
     const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-    const savedMotion = localStorage.getItem('motion') || (window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'off' : 'on');
     setTheme(savedTheme);
-    setMotion(savedMotion);
 
     const typeWriter = () => {
         if (!typing) return;
-        if (body.classList.contains('reduced-motion')) {
-            typing.textContent = phrases[phraseIndex];
-            return;
-        }
         const current = phrases[phraseIndex];
         if (charIndex <= current.length) {
             typing.textContent = current.slice(0, charIndex);
@@ -88,10 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const animateStats = (entry) => {
         const target = Number(entry.dataset.count || 0);
-        if (body.classList.contains('reduced-motion')) {
-            entry.textContent = target;
-            return;
-        }
         let start = 0;
         const step = () => {
             start += Math.max(1, Math.ceil(target / 60));
@@ -155,18 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (motionToggle) {
-        motionToggle.addEventListener('click', () => {
-            const next = body.classList.contains('reduced-motion') ? 'on' : 'off';
-            setMotion(next);
-            if (next === 'on' && typing) {
-                phraseIndex = 0;
-                charIndex = 0;
-                setTimeout(typeWriter, 200);
-            }
-        });
-    }
-
     navLinks.forEach(link => {
         const href = link.getAttribute('href') || '';
         if (href.startsWith('#')) {
@@ -215,10 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateScrollIndicator();
     highlightNav();
     if (typing) {
-        if (!body.classList.contains('reduced-motion')) {
-            setTimeout(typeWriter, 400);
-        } else {
-            typing.textContent = phrases[0];
-        }
+        setTimeout(typeWriter, 400);
     }
 });
