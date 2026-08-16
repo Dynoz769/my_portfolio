@@ -698,6 +698,21 @@ body.theme-light {
     margin-bottom: 12px;
 }
 
+.project-thumb {
+    height: 140px;
+    border-radius: 10px;
+    background-color: var(--panel);
+    background-image: repeating-linear-gradient(45deg, rgba(156, 210, 255, 0.12) 0, rgba(156, 210, 255, 0.12) 10px, transparent 10px, transparent 20px);
+    border: 1px dashed var(--stroke);
+    display: grid;
+    place-items: center;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

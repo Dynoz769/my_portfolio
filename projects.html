@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Adam Iman</title>
+<meta name="description" content="Selected projects by Adam Iman - IT enthusiast, developer, and creative technologist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="backdrop">
+        <div class="orb one"></div>
+        <div class="orb two"></div>
+        <div class="orb three"></div>
+        <div class="glow-grid"></div>
+        <div class="rocket-wrap">
+            <svg class="rocket" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <g fill="none" stroke="#f8d64e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M60 14c-6 14-9 31-9 48 0 17 3 34 9 48 6-14 9-31 9-48 0-17-3-34-9-48z" />
+                    <path d="M60 38l-10 12h20z" />
+                    <path d="M60 82l-12 18h24z" />
+                    <circle cx="60" cy="52" r="7" />
+                    <path d="M44 64l-14 8m56-8l14 8" />
+                </g>
+                <g fill="none" stroke="#9cd2ff" stroke-width="2" stroke-linecap="round">
+                    <path d="M60 96v12" />
+                    <path d="M54 94v8" />
+                    <path d="M66 94v8" />
+                </g>
+            </svg>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+        </div>
+    </div>
+    <div class="scroll-indicator"></div>
+
+    <div class="sidebar-cta">
+        <a href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WA</a>
+        <a href="mailto:Dynoz769@gmail.com" class="secondary">Email</a>
+    </div>
+
+    <header class="nav-shell shell">
+        <a class="brand" href="index.html">Adam Iman</a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button class="toggle" id="theme-toggle" aria-label="Toggle light or dark mode">Light</button>
+            <button class="toggle" id="motion-toggle" aria-label="Toggle motion preferences">Motion</button>
+            <a class="btn ghost resume-download" href="Resume.pdf" download>Resume</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="section shell" style="padding-top: 48px;">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">Projects</p>
+                    <h1 class="hero-title" style="font-size: clamp(30px, 4vw, 44px);">Selected work.</h1>
+                    <p class="section-sub" style="max-width: 640px;">Work that balances usability, performance, and storytelling.</p>
+                </div>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ui">UI</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+                <button class="filter-btn" data-filter="api">API</button>
+                <button class="filter-btn" data-filter="content">Content</button>
+            </div>
+            <div class="project-grid">
+                <article class="glass project-card reveal" data-category="ui content">
+                    <div class="project-header">
+                        <h3>[UI] Campus Hub</h3>
+                        <div class="project-links">
+                            <a class="badge" href="#">Demo</a>
+                            <a class="badge" href="#">GitHub</a>
+                        </div>
+                    </div>
+                    <p class="section-sub">Portal for students to access notices, schedules, and feedback quickly.</p>
+                    <div class="tag-row">
+                        <span class="tag">React basics</span>
+                        <span class="tag">API</span>
+                        <span class="tag">Design system</span>
+                    </div>
+                </article>
+                <article class="glass project-card reveal" data-category="automation api">
+                    <div class="project-header">
+                        <h3>[Automation] Toolkit</h3>
+                        <div class="project-links">
+                            <a class="badge" href="#">Demo</a>
+                            <a class="badge" href="#">GitHub</a>
+                        </div>
+                    </div>
+                    <p class="section-sub">Scripts and dashboards to automate reports and track device health.</p>
+                    <div class="tag-row">
+                        <span class="tag">Python</span>
+                        <span class="tag">APIs</span>
+                        <span class="tag">Monitoring</span>
+                    </div>
+                </article>
+                <article class="glass project-card reveal" data-category="ui content">
+                    <div class="project-header">
+                        <h3>[Content] Storyline Microsite</h3>
+                        <div class="project-links">
+                            <a class="badge" href="#">Demo</a>
+                            <a class="badge" href="#">GitHub</a>
+                        </div>
+                    </div>
+                    <p class="section-sub">Narrative landing page with motion, video snippets, and clear CTAs.</p>
+                    <div class="tag-row">
+                        <span class="tag">UI</span>
+                        <span class="tag">Content</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="more-projects" class="section shell" style="padding-top: 24px;">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">// All projects</p>
+                    <h2 class="section-title">Things I've built.</h2>
+                    <p class="section-sub">Six placeholder projects below — replace each card's title, description, tags, thumbnail, and link with your own work.</p>
+                </div>
+            </div>
+            <div class="project-grid">
+                <a href="#" class="glass project-card reveal">
+                    <div class="project-thumb">Preview</div>
+                    <span class="meta-label">Placeholder</span>
+                    <h3>Project One</h3>
+                    <p class="section-sub">A one or two sentence summary — what it is, who it's for, and the core problem it solves.</p>
+                    <div class="tag-row">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </a>
+                <a href="#" class="glass project-card reveal">
+                    <div class="project-thumb">Preview</div>
+                    <span class="meta-label">Placeholder</span>
+                    <h3>Project Two</h3>
+                    <p class="section-sub">A one or two sentence summary — what it is, who it's for, and the core problem it solves.</p>
+                    <div class="tag-row">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">Stripe</span>
+                    </div>
+                </a>
+                <a href="#" class="glass project-card reveal">
+                    <div class="project-thumb">Preview</div>
+                    <span class="meta-label">Placeholder</span>
+                    <h3>Project Three</h3>
+                    <p class="section-sub">A one or two sentence summary — what it is, who it's for, and the core problem it solves.</p>
+                    <div class="tag-row">
+                        <span class="tag">Vue</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </a>
+                <a href="#" class="glass project-card reveal">
+                    <div class="project-thumb">Preview</div>
+                    <span class="meta-label">Placeholder</span>
+                    <h3>Project Four</h3>
+                    <p class="section-sub">A one or two sentence summary — what it is, who it's for, and the core problem it solves.</p>
+                    <div class="tag-row">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">GraphQL</span>
+                    </div>
+                </a>
+                <a href="#" class="glass project-card reveal">
+                    <div class="project-thumb">Preview</div>
+                    <span class="meta-label">Placeholder</span>
+                    <h3>Project Five</h3>
+                    <p class="section-sub">A one or two sentence summary — what it is, who it's for, and the core problem it solves.</p>
+                    <div class="tag-row">
+                        <span class="tag">Laravel</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </a>
+                <a href="#" class="glass project-card reveal">
+                    <div class="project-thumb">Preview</div>
+                    <span class="meta-label">Placeholder</span>
+                    <h3>Project Six</h3>
+                    <p class="section-sub">A one or two sentence summary — what it is, who it's for, and the core problem it solves.</p>
+                    <div class="tag-row">
+                        <span class="tag">Svelte</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="workflow" class="section shell" style="padding-top: 24px;">
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title">Workflow</h2>
+                    <p class="section-sub">A simple path that keeps collaboration smooth and delivery reliable.</p>
+                </div>
+            </div>
+            <div class="workflow-steps">
+                <div class="glass workflow-card reveal">
+                    <span class="meta-label">1. Discover</span>
+                    <h4>Listen & align</h4>
+                    <p class="section-sub">Clarify the goal, users, constraints, and success metrics.</p>
+                </div>
+                <div class="glass workflow-card reveal">
+                    <span class="meta-label">2. Design</span>
+                    <h4>Shape the solution</h4>
+                    <p class="section-sub">Sketch flows, wireframes, and pick the right stack for speed.</p>
+                </div>
+                <div class="glass workflow-card reveal">
+                    <span class="meta-label">3. Build</span>
+                    <h4>Ship in slices</h4>
+                    <p class="section-sub">Implement iteratively with testing and fast feedback loops.</p>
+                </div>
+                <div class="glass workflow-card reveal">
+                    <span class="meta-label">4. Validate</span>
+                    <h4>Measure & improve</h4>
+                    <p class="section-sub">Collect data, refine UX, and document for easy handoff.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section shell" style="padding-top: 24px; padding-bottom: 64px;">
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title">Experience & Awards</h2>
+                    <p class="section-sub">Leadership, competitions, and hands-on delivery that shaped how I work.</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <article class="timeline-item reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">2026 | National</div>
+                        <h3>Runner-up - Duta Kecil TVET @ KV Influencer</h3>
+                        <p class="section-sub">Named national-level runner-up (26 July 2026), representing Kolej Vokasional Pasir Mas as a Diploma in Information Technology student.</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">2026 | National</div>
+                        <h3>Runner-up - Duta Kecil TVET (KPM)</h3>
+                        <p class="section-sub">Runner-up at the Ministry of Education Malaysia's Duta Kecil TVET 2026 competition, held at Kompleks Kraf Kuala Lumpur.</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">2024/2025 | Regional</div>
+                        <h3>1st Place - Techlympics Zon Timur</h3>
+                        <p class="section-sub">Cabaran Siasatan Jenayah category, representing KV Pasir Mas at the Eastern Zone level.</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">2024 | Innovation</div>
+                        <h3>E-Pengarang 3M Innovation Team</h3>
+                        <p class="section-sub">Part of the college's innovation team behind the E-Pengarang 3M project.</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">2025 | Leadership</div>
+                        <h3>Yang Dipertua MPP</h3>
+                        <p class="section-sub">Led the student council (MPP KV Pasir Mas 2025/2026) with a focus on digital initiatives.</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">2024 | Innovation</div>
+                        <h3>Gold Award - IIAR24</h3>
+                        <p class="section-sub">E-Pengarang 3M at KV Batu Pahat, Johor.</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">2024 | Education</div>
+                        <h3>Special Award - IIAR24</h3>
+                        <p class="section-sub">Recognized for education-focused solutions with E-Pengarang 3M.</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">2024 | Social Science</div>
+                        <h3>Silver Medal - NSIEx</h3>
+                        <p class="section-sub">Social Science (7/2) category, highlighting user research and impact.</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">2024 | Innovation</div>
+                        <h3>IMAS Award</h3>
+                        <p class="section-sub">UiTM Puncak Perdana recognition for applied technology.</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">2024 | National</div>
+                        <h3>Techlympic Malaysia</h3>
+                        <p class="section-sub">3rd place, Game Prototype; represented Kelantan at the national level.</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">2024 | Leadership</div>
+                        <h3>ICT Executive Committee</h3>
+                        <p class="section-sub">MPP KV Pasir Mas (2024/2025) driving digital literacy efforts.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="cta-bar glass reveal" style="margin-top: 24px;">
+                <div class="cta-copy">
+                    <strong>Have a project in mind?</strong>
+                    <p class="section-sub">Let's talk through the details and see how I can help.</p>
+                </div>
+                <div class="cta-row" style="margin-bottom: 0;">
+                    <a class="btn solid" href="contact.html">Contact me</a>
+                    <a class="btn outline" href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="shell">
+        <p>(c) 2025 Adam Iman. Built with intent and a lot of coffee.</p>
+        <p style="margin-top:8px;">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="about.html">About page</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="insights.html">Insights page</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="contact.html">Contact page</a>
+        </p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

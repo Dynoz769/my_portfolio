@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insights | Adam Iman</title>
+<meta name="description" content="Writing and notes from Adam Iman on design, code, and delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="backdrop">
+        <div class="orb one"></div>
+        <div class="orb two"></div>
+        <div class="orb three"></div>
+        <div class="glow-grid"></div>
+        <div class="rocket-wrap">
+            <svg class="rocket" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <g fill="none" stroke="#f8d64e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M60 14c-6 14-9 31-9 48 0 17 3 34 9 48 6-14 9-31 9-48 0-17-3-34-9-48z" />
+                    <path d="M60 38l-10 12h20z" />
+                    <path d="M60 82l-12 18h24z" />
+                    <circle cx="60" cy="52" r="7" />
+                    <path d="M44 64l-14 8m56-8l14 8" />
+                </g>
+                <g fill="none" stroke="#9cd2ff" stroke-width="2" stroke-linecap="round">
+                    <path d="M60 96v12" />
+                    <path d="M54 94v8" />
+                    <path d="M66 94v8" />
+                </g>
+            </svg>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+        </div>
+    </div>
+    <div class="scroll-indicator"></div>
+
+    <div class="sidebar-cta">
+        <a href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WA</a>
+        <a href="mailto:Dynoz769@gmail.com" class="secondary">Email</a>
+    </div>
+
+    <header class="nav-shell shell">
+        <a class="brand" href="index.html">Adam Iman</a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="insights.html" class="active">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button class="toggle" id="theme-toggle" aria-label="Toggle light or dark mode">Light</button>
+            <button class="toggle" id="motion-toggle" aria-label="Toggle motion preferences">Motion</button>
+            <a class="btn ghost resume-download" href="Resume.pdf" download>Resume</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="insights" class="section shell" style="padding-top: 48px;">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">Insights</p>
+                    <h1 class="hero-title" style="font-size: clamp(30px, 4vw, 44px);">Writing & notes.</h1>
+                    <p class="section-sub" style="max-width: 640px;">Notes that capture how I approach design, code, and delivery.</p>
+                </div>
+            </div>
+            <div class="insights-grid">
+                <article class="glass insight-card reveal">
+                    <div class="blog-meta">
+                        <span class="tag">Process</span>
+                        <span>Mar 2025</span>
+                    </div>
+                    <h3>Designing reliable student portals</h3>
+                    <p class="section-sub">Lessons from building tools that thousands rely on every day.</p>
+                </article>
+                <article class="glass insight-card reveal">
+                    <div class="blog-meta">
+                        <span class="tag">Engineering</span>
+                        <span>Feb 2025</span>
+                    </div>
+                    <h3>Automation that respects people</h3>
+                    <p class="section-sub">How to automate reporting without losing the context humans provide.</p>
+                </article>
+                <article class="glass insight-card reveal skeleton">
+                    <div class="blog-meta">
+                        <span class="tag">UX</span>
+                        <span>Jan 2025</span>
+                    </div>
+                    <h3>Microcopy that guides</h3>
+                    <p class="section-sub">Small phrases that reduce errors and build trust in interfaces.</p>
+                </article>
+            </div>
+            <div class="cta-bar glass reveal">
+                <div class="cta-copy">
+                    <strong>Need something fast?</strong>
+                    <p class="section-sub">Ping me on WhatsApp or book a quick call to get started.</p>
+                </div>
+                <div class="cta-row" style="margin-bottom: 0;">
+                    <a class="btn solid" href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WhatsApp</a>
+                    <a class="btn outline" href="https://calendly.com/adam-iman/15min" target="_blank" rel="noreferrer">Book a call</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="shell">
+        <p>(c) 2025 Adam Iman. Built with intent and a lot of coffee.</p>
+        <p style="margin-top:8px;">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="about.html">About page</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="projects.html">Projects page</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="contact.html">Contact page</a>
+        </p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

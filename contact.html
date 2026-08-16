@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Adam Iman</title>
+<meta name="description" content="Get in touch with Adam Iman - IT enthusiast, developer, and creative technologist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="backdrop">
+        <div class="orb one"></div>
+        <div class="orb two"></div>
+        <div class="orb three"></div>
+        <div class="glow-grid"></div>
+        <div class="rocket-wrap">
+            <svg class="rocket" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <g fill="none" stroke="#f8d64e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M60 14c-6 14-9 31-9 48 0 17 3 34 9 48 6-14 9-31 9-48 0-17-3-34-9-48z" />
+                    <path d="M60 38l-10 12h20z" />
+                    <path d="M60 82l-12 18h24z" />
+                    <circle cx="60" cy="52" r="7" />
+                    <path d="M44 64l-14 8m56-8l14 8" />
+                </g>
+                <g fill="none" stroke="#9cd2ff" stroke-width="2" stroke-linecap="round">
+                    <path d="M60 96v12" />
+                    <path d="M54 94v8" />
+                    <path d="M66 94v8" />
+                </g>
+            </svg>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+        </div>
+    </div>
+    <div class="scroll-indicator"></div>
+
+    <div class="sidebar-cta">
+        <a href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WA</a>
+        <a href="mailto:Dynoz769@gmail.com" class="secondary">Email</a>
+    </div>
+
+    <header class="nav-shell shell">
+        <a class="brand" href="index.html">Adam Iman</a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button class="toggle" id="theme-toggle" aria-label="Toggle light or dark mode">Light</button>
+            <button class="toggle" id="motion-toggle" aria-label="Toggle motion preferences">Motion</button>
+            <a class="btn ghost resume-download" href="Resume.pdf" download>Resume</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact" class="section shell" style="padding-top: 48px;">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h1 class="hero-title" style="font-size: clamp(30px, 4vw, 44px);">Get in touch.</h1>
+                    <p class="section-sub" style="max-width: 640px;">Ready to collaborate or need a quick consult? Tell me about it. This form is anonymous — name and email are optional.</p>
+                </div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-list">
+                    <div class="contact-item reveal">
+                        <strong>Phone</strong>
+                        <span class="section-sub">Available on request — message on WhatsApp.</span>
+                        <div class="copy-actions">
+                            <a class="copy-btn" href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WhatsApp</a>
+                            <button class="copy-btn" data-copy="+60113534769">Copy phone</button>
+                        </div>
+                    </div>
+                    <div class="contact-item reveal">
+                        <strong>Email</strong>
+                        <span class="section-sub">Available on request — send an email.</span>
+                        <div class="copy-actions">
+                            <a class="copy-btn" href="mailto:Dynoz769@gmail.com">Email me</a>
+                            <button class="copy-btn" data-copy="Dynoz769@gmail.com">Copy email</button>
+                        </div>
+                    </div>
+                    <div class="contact-item reveal">
+                        <strong>Location</strong>
+                        Kelantan, Malaysia
+                    </div>
+                </div>
+                <form class="form reveal" id="contact-form">
+                    <p class="section-sub" style="margin: 0;">Sending anonymously? Leave name and email blank.</p>
+                    <div class="field">
+                        <label for="name">Name <span class="tag">Optional</span></label>
+                        <input id="name" class="input" type="text" name="name" placeholder="Anonymous">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email <span class="tag">Optional</span></label>
+                        <input id="email" class="input" type="email" name="email" placeholder="Leave blank to stay anonymous">
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input id="subject" class="input" type="text" name="subject" placeholder="How can I help?" required>
+                    </div>
+                    <div class="field">
+                        <label for="type">Type of request</label>
+                        <select id="type" class="input" name="type" required>
+                            <option value="">Choose one</option>
+                            <option>Bug / Issue</option>
+                            <option>Feature / Build</option>
+                            <option>Collaboration</option>
+                            <option>Consultation</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="input" name="message" placeholder="Tell me about the project" required></textarea>
+                    </div>
+                    <button type="submit" class="btn solid">Send message</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section shell" style="padding-top: 24px; padding-bottom: 64px;">
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title">Testimonials</h2>
+                    <p class="section-sub">Notes from collaborators and mentors on how I work.</p>
+                </div>
+            </div>
+            <div class="testimonial-grid">
+                <article class="glass testimonial-card reveal">
+                    <span class="meta-label">Mentor</span>
+                    <p class="quote">"Adam blends speed with clarity. He documents decisions and keeps stakeholders aligned."</p>
+                    <div class="blog-meta"><span class="tag">Collaboration</span><span class="tag">Ownership</span></div>
+                </article>
+                <article class="glass testimonial-card reveal">
+                    <span class="meta-label">Team lead</span>
+                    <p class="quote">"Reliable under pressure - he simplifies problems and ships iteratively with solid handoffs."</p>
+                    <div class="blog-meta"><span class="tag">Delivery</span><span class="tag">Systems</span></div>
+                </article>
+                <article class="glass testimonial-card reveal">
+                    <span class="meta-label">Peer</span>
+                    <p class="quote">"Great at translating user feedback into actionable tweaks that improve the experience fast."</p>
+                    <div class="blog-meta"><span class="tag">UX</span><span class="tag">Feedback loops</span></div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="shell">
+        <p>(c) 2025 Adam Iman. Built with intent and a lot of coffee.</p>
+        <p style="margin-top:8px;">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="about.html">About page</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="projects.html">Projects page</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="insights.html">Insights page</a>
+        </p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

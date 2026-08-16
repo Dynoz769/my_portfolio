@@ -93,29 +93,23 @@
         <div class="brand">Adam Iman</div>
         <nav>
             <ul class="nav-menu">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#stack">Stack</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#workflow">Workflow</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#insights">Insights</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="controls">
             <button class="toggle" id="theme-toggle" aria-label="Toggle light or dark mode">Light</button>
             <button class="toggle" id="motion-toggle" aria-label="Toggle motion preferences">Motion</button>
-            <a class="btn ghost" href="Resume.pdf" download>Resume</a>
+            <a class="btn ghost resume-download" href="Resume.pdf" download>Resume</a>
         </div>
     </header>
 
     <div class="update-bar">
         <span class="update-dot"></span>
-        <span>Latest: Added Projects & Workflow tabs, refreshed contact actions, and trimmed animations for speed.</span>
+        <span>Latest: Rebuilt as a multi-page site — Home, About, Projects, Insights, and Contact each live on their own page now.</span>
     </div>
 
     <main>
@@ -126,8 +120,8 @@
                     <h1 class="hero-title">Building clean, fast experiences with code and intent.</h1>
                     <p class="lede typing-effect"></p>
                     <div class="cta-row">
-                        <a class="btn solid" href="#contact">Start a project</a>
-                        <a class="btn outline" href="Resume.pdf" download>Download resume</a>
+                        <a class="btn solid" href="contact.html">Start a project</a>
+                        <a class="btn outline resume-download" href="Resume.pdf" download>Download resume</a>
                     </div>
                     <div class="pill-row">
                         <span class="pill">Full-stack fundamentals</span>
@@ -152,7 +146,7 @@
                             <span class="stat-label">Projects delivered</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-number" data-count="7">0</span>
                             <span class="stat-label">Awards earned</span>
                         </div>
                         <div class="stat">
@@ -164,688 +158,51 @@
             </div>
         </section>
 
-        <section id="about" class="section shell">
+        <section id="explore" class="section shell">
             <div class="section-head">
                 <div>
-                    <h2 class="section-title">About</h2>
-                    <p class="section-sub">Curious technologist blending development, design, and multimedia storytelling to create useful products.</p>
-                </div>
-            </div>
-            <div class="grid-two">
-                <div class="text-block reveal">
-                    <p>I love turning ambiguous ideas into clear, workable systems. From network management to interface polish, I lean on structured thinking, rapid testing, and thoughtful storytelling to ship work people enjoy using.</p>
-                    <br>
-                    <p>Staying current with modern stacks and design practices keeps me moving fast without losing reliability. I am happiest when collaborating closely, iterating, and leaving behind documentation that others can build on.</p>
-                </div>
-                <ul class="glass list-card reveal">
-                    <li>Problem solving <span class="tag">Root cause first</span></li>
-                    <li>Software development <span class="tag">Frontend + backend</span></li>
-                    <li>Network management <span class="tag">Resilient setups</span></li>
-                    <li>Creative direction <span class="tag">Story-driven assets</span></li>
-                </ul>
-            </div>
-            <div class="current-panel">
-                <div class="glass current-card reveal">
-                    <span class="meta-label">Learning</span>
-                    <strong>Deepening React + API design</strong>
-                    <p class="section-sub">Building reusable patterns and faster delivery pipelines.</p>
-                </div>
-                <div class="glass current-card reveal">
-                    <span class="meta-label">Building</span>
-                    <strong>Automation toolkit</strong>
-                    <p class="section-sub">Scripts and dashboards to speed up reporting and monitoring.</p>
-                </div>
-                <div class="glass current-card reveal">
-                    <span class="meta-label">Reading</span>
-                    <strong>Designing Data-Intensive Apps</strong>
-                    <p class="section-sub">Exploring reliability and scalability patterns for real projects.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section shell">
-            <div class="section-head">
-                <div>
-                    <h2 class="section-title">Education & Language</h2>
-                    <p class="section-sub">Formal training and languages I use to collaborate and deliver.</p>
-                </div>
-            </div>
-            <div class="edu-grid">
-                <div class="glass resume-card reveal">
-                    <div class="resume-top">
-                        <div class="skill-title">Education</div>
-                        <span class="pill">2022 - Now</span>
-                    </div>
-                    <ul class="resume-list">
-                        <li class="resume-item">
-                            <div class="resume-title">Malaysia Vocational Certificate</div>
-                            <div class="resume-meta">Kolej Vokasional Pasir Mas</div>
-                            <div class="resume-meta">2022 - 2024</div>
-                        </li>
-                        <li class="resume-item">
-                            <div class="resume-title">Malaysia Skills Certificate Level 3</div>
-                            <div class="resume-meta">Kolej Vokasional Pasir Mas</div>
-                            <div class="resume-meta">2022 - 2024</div>
-                        </li>
-                        <li class="resume-item">
-                            <div class="resume-title">Diploma In Information Technology</div>
-                            <div class="resume-meta">Kolej Vokasional Pasir Mas</div>
-                            <div class="resume-meta">2024 - Now</div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="glass resume-card reveal">
-                    <div class="resume-top">
-                        <div class="skill-title">Language</div>
-                        <span class="pill">Daily use</span>
-                    </div>
-                    <ul class="dot-list">
-                        <li><strong>Malay</strong> - Native</li>
-                        <li><strong>English</strong> - Professional</li>
-                    </ul>
-                    <div class="resume-tagline">Comfortable presenting, documenting, and collaborating in both.</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section shell">
-            <div class="section-head">
-                <div>
-                    <h2 class="section-title">Skills</h2>
-                    <p class="section-sub">Core strengths, shown individually.</p>
-                </div>
-            </div>
-            <div class="skills-grid">
-                <div class="glass skill-card reveal">
-                    <div class="skill-top">
-                        <div class="skill-heading">
-                            <span class="skill-icon" aria-hidden="true">OG</span>
-                            <div>
-                                <div class="skill-title">Organized</div>
-                                <div class="skill-note">Structured planning and tidy execution.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="glass skill-card reveal">
-                    <div class="skill-top">
-                        <div class="skill-heading">
-                            <span class="skill-icon" aria-hidden="true">CR</span>
-                            <div>
-                                <div class="skill-title">Creativity</div>
-                                <div class="skill-note">Fresh ideas and visual storytelling.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="glass skill-card reveal">
-                    <div class="skill-top">
-                        <div class="skill-heading">
-                            <span class="skill-icon" aria-hidden="true">{ }</span>
-                            <div>
-                                <div class="skill-title">Programming</div>
-                                <div class="skill-note">Building clean, testable, maintainable code.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="glass skill-card reveal">
-                    <div class="skill-top">
-                        <div class="skill-heading">
-                            <span class="skill-icon" aria-hidden="true">TC</span>
-                            <div>
-                                <div class="skill-title">Technician</div>
-                                <div class="skill-note">Hands-on troubleshooting and setup.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="glass skill-card reveal">
-                    <div class="skill-top">
-                        <div class="skill-heading">
-                            <span class="skill-icon" aria-hidden="true">CT</span>
-                            <div>
-                                <div class="skill-title">Critical Thinking</div>
-                                <div class="skill-note">Root-cause analysis and clear decisions.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="glass skill-card reveal">
-                    <div class="skill-top">
-                        <div class="skill-heading">
-                            <span class="skill-icon" aria-hidden="true">MM</span>
-                            <div>
-                                <div class="skill-title">Multimedia</div>
-                                <div class="skill-note">Audio, video, and visual assets that stand out.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="glass skill-card reveal">
-                    <div class="skill-top">
-                        <div class="skill-heading">
-                            <span class="skill-icon" aria-hidden="true">CS</span>
-                            <div>
-                                <div class="skill-title">Computer Skills</div>
-                                <div class="skill-note">Productivity, documentation, and fast workflows.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="glass skill-card reveal">
-                    <div class="skill-top">
-                        <div class="skill-heading">
-                            <span class="skill-icon" aria-hidden="true">DM</span>
-                            <div>
-                                <div class="skill-title">Digital Marketing</div>
-                                <div class="skill-note">Campaigns with clear KPIs and thoughtful content pipelines.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="stack" class="section shell">
-            <div class="section-head">
-                <div>
-                    <h2 class="section-title">Stack & Tools</h2>
-                    <p class="section-sub">The tech I reach for when building, debugging, and shipping.</p>
-                </div>
-            </div>
-            <div class="stack-grid">
-                <div class="stack-item reveal"><span>JavaScript / TypeScript</span><span class="tag">Frontend</span></div>
-                <div class="stack-item reveal"><span>React basics</span><span class="tag">UI</span></div>
-                <div class="stack-item reveal"><span>Python</span><span class="tag">Scripting</span></div>
-                <div class="stack-item reveal"><span>Node + Express</span><span class="tag">APIs</span></div>
-                <div class="stack-item reveal"><span>Git / GitHub</span><span class="tag">Collab</span></div>
-                <div class="stack-item reveal"><span>Figma</span><span class="tag">Design</span></div>
-                <div class="stack-item reveal"><span>Docker basics</span><span class="tag">Ops</span></div>
-                <div class="stack-item reveal"><span>Notion</span><span class="tag">Docs</span></div>
-            </div>
-        </section>
-
-        <section id="projects" class="section shell">
-            <div class="section-head">
-                <div>
-                    <h2 class="section-title">Projects</h2>
-                    <p class="section-sub">Selected work that balances usability, performance, and storytelling.</p>
-                </div>
-            </div>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="ui">UI</button>
-                <button class="filter-btn" data-filter="automation">Automation</button>
-                <button class="filter-btn" data-filter="api">API</button>
-                <button class="filter-btn" data-filter="content">Content</button>
-            </div>
-            <div class="project-grid">
-                <article class="glass project-card reveal" data-category="ui content">
-                    <div class="project-header">
-                        <h3>[UI] Campus Hub</h3>
-                        <div class="project-links">
-                            <a class="badge" href="#">Demo</a>
-                            <a class="badge" href="#">GitHub</a>
-                        </div>
-                    </div>
-                    <p class="section-sub">Portal for students to access notices, schedules, and feedback quickly.</p>
-                    <div class="tag-row">
-                        <span class="tag">React basics</span>
-                        <span class="tag">API</span>
-                        <span class="tag">Design system</span>
-                    </div>
-                </article>
-                <article class="glass project-card reveal" data-category="automation api">
-                    <div class="project-header">
-                        <h3>[Automation] Toolkit</h3>
-                        <div class="project-links">
-                            <a class="badge" href="#">Demo</a>
-                            <a class="badge" href="#">GitHub</a>
-                        </div>
-                    </div>
-                    <p class="section-sub">Scripts and dashboards to automate reports and track device health.</p>
-                    <div class="tag-row">
-                        <span class="tag">Python</span>
-                        <span class="tag">APIs</span>
-                        <span class="tag">Monitoring</span>
-                    </div>
-                </article>
-                <article class="glass project-card reveal" data-category="ui content">
-                    <div class="project-header">
-                        <h3>[Content] Storyline Microsite</h3>
-                        <div class="project-links">
-                            <a class="badge" href="#">Demo</a>
-                            <a class="badge" href="#">GitHub</a>
-                        </div>
-                    </div>
-                    <p class="section-sub">Narrative landing page with motion, video snippets, and clear CTAs.</p>
-                    <div class="tag-row">
-                        <span class="tag">UI</span>
-                        <span class="tag">Content</span>
-                        <span class="tag">SEO</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="workflow" class="section shell">
-            <div class="section-head">
-                <div>
-                    <h2 class="section-title">Workflow</h2>
-                    <p class="section-sub">A simple path that keeps collaboration smooth and delivery reliable.</p>
+                    <h2 class="section-title">Explore</h2>
+                    <p class="section-sub">Jump to any part of the portfolio.</p>
                 </div>
             </div>
             <div class="workflow-steps">
-                <div class="glass workflow-card reveal">
-                    <span class="meta-label">1. Discover</span>
-                    <h4>Listen & align</h4>
-                    <p class="section-sub">Clarify the goal, users, constraints, and success metrics.</p>
-                </div>
-                <div class="glass workflow-card reveal">
-                    <span class="meta-label">2. Design</span>
-                    <h4>Shape the solution</h4>
-                    <p class="section-sub">Sketch flows, wireframes, and pick the right stack for speed.</p>
-                </div>
-                <div class="glass workflow-card reveal">
-                    <span class="meta-label">3. Build</span>
-                    <h4>Ship in slices</h4>
-                    <p class="section-sub">Implement iteratively with testing and fast feedback loops.</p>
-                </div>
-                <div class="glass workflow-card reveal">
-                    <span class="meta-label">4. Validate</span>
-                    <h4>Measure & improve</h4>
-                    <p class="section-sub">Collect data, refine UX, and document for easy handoff.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section shell">
-            <div class="section-head">
-                <div>
-                    <h2 class="section-title">Experience</h2>
-                    <p class="section-sub">Leadership, competitions, and hands-on delivery that shaped how I work.</p>
-                </div>
-            </div>
-            <div class="timeline">
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2025 | Leadership</div>
-                        <h3>Yang Dipertua MPP</h3>
-                        <p class="section-sub">Led the student council (MPP KV Pasir Mas 2025/2026) with a focus on digital initiatives.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | Innovation</div>
-                        <h3>Gold Award - IIAR24</h3>
-                        <p class="section-sub">E-Pengarang 3M at KV Batu Pahat, Johor.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | Education</div>
-                        <h3>Special Award - IIAR24</h3>
-                        <p class="section-sub">Recognized for education-focused solutions with E-Pengarang 3M.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | Social Science</div>
-                        <h3>Silver Medal - NSIEx</h3>
-                        <p class="section-sub">Social Science (7/2) category, highlighting user research and impact.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | Innovation</div>
-                        <h3>IMAS Award</h3>
-                        <p class="section-sub">UiTM Puncak Perdana recognition for applied technology.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | National</div>
-                        <h3>Techlympic Malaysia</h3>
-                        <p class="section-sub">3rd place, Game Prototype; represented Kelantan at the national level.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | Leadership</div>
-                        <h3>ICT Executive Committee</h3>
-                        <p class="section-sub">MPP KV Pasir Mas (2024/2025) driving digital literacy efforts.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="testimonials" class="section shell">
-            <div class="section-head">
-                <div>
-                    <h2 class="section-title">Testimonials</h2>
-                    <p class="section-sub">Notes from collaborators and mentors on how I work.</p>
-                </div>
-            </div>
-            <div class="testimonial-grid">
-                <article class="glass testimonial-card reveal">
-                    <span class="meta-label">Mentor</span>
-                    <p class="quote">"Adam blends speed with clarity. He documents decisions and keeps stakeholders aligned."</p>
-                    <div class="blog-meta"><span class="tag">Collaboration</span><span class="tag">Ownership</span></div>
-                </article>
-                <article class="glass testimonial-card reveal">
-                    <span class="meta-label">Team lead</span>
-                        <p class="quote">"Reliable under pressure - he simplifies problems and ships iteratively with solid handoffs."</p>
-                        <div class="blog-meta"><span class="tag">Delivery</span><span class="tag">Systems</span></div>
-                </article>
-                <article class="glass testimonial-card reveal">
-                    <span class="meta-label">Peer</span>
-                    <p class="quote">"Great at translating user feedback into actionable tweaks that improve the experience fast."</p>
-                    <div class="blog-meta"><span class="tag">UX</span><span class="tag">Feedback loops</span></div>
-                </article>
-            </div>
-        </section>
-
-        <section id="insights" class="section shell">
-            <div class="section-head">
-                <div>
-                    <h2 class="section-title">Insights</h2>
-                    <p class="section-sub">Writing and notes that capture how I approach design, code, and delivery.</p>
-                </div>
-            </div>
-            <div class="insights-grid">
-                <article class="glass insight-card reveal">
-                    <div class="blog-meta">
-                        <span class="tag">Process</span>
-                        <span>Mar 2025</span>
-                    </div>
-                    <h3>Designing reliable student portals</h3>
-                    <p class="section-sub">Lessons from building tools that thousands rely on every day.</p>
-                </article>
-                <article class="glass insight-card reveal">
-                    <div class="blog-meta">
-                        <span class="tag">Engineering</span>
-                        <span>Feb 2025</span>
-                    </div>
-                    <h3>Automation that respects people</h3>
-                    <p class="section-sub">How to automate reporting without losing the context humans provide.</p>
-                </article>
-                <article class="glass insight-card reveal skeleton">
-                    <div class="blog-meta">
-                        <span class="tag">UX</span>
-                        <span>Jan 2025</span>
-                    </div>
-                    <h3>Microcopy that guides</h3>
-                    <p class="section-sub">Small phrases that reduce errors and build trust in interfaces.</p>
-                </article>
-            </div>
-            <div class="cta-bar glass reveal">
-                <div class="cta-copy">
-                    <strong>Need something fast?</strong>
-                    <p class="section-sub">Ping me on WhatsApp or book a quick call to get started.</p>
-                </div>
-                <div class="cta-row">
-                    <a class="btn solid" href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WhatsApp</a>
-                    <a class="btn outline" href="https://calendly.com/adam-iman/15min" target="_blank" rel="noreferrer">Book a call</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section shell">
-            <div class="section-head">
-                <div>
-                    <h2 class="section-title">Get in touch</h2>
-                    <p class="section-sub">Ready to collaborate or need a quick consult? Tell me about it.</p>
-                </div>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-list">
-                    <div class="contact-item reveal">
-                        <strong>Phone</strong>
-                        <a href="tel:+60113534769">011-35344769</a>
-                        <div class="copy-actions">
-                            <button class="copy-btn" data-copy="+60113534769">Copy phone</button>
-                        </div>
-                    </div>
-                    <div class="contact-item reveal">
-                        <strong>Email</strong>
-                        <a href="mailto:Dynoz769@gmail.com">Dynoz769@gmail.com</a>
-                        <div class="copy-actions">
-                            <button class="copy-btn" data-copy="Dynoz769@gmail.com">Copy email</button>
-                        </div>
-                    </div>
-                    <div class="contact-item reveal">
-                        <strong>Location</strong>
-                        1512, Kg Binjal Manis, Bunut Susu, 17020 Pasir Mas, Kelantan
-                    </div>
-                    <div class="contact-item reveal">
-                        <strong>Interactive links</strong>
-                        <a href="https://arleta.onpay.my/order/form/IL001/Dynoz" target="_blank" rel="noreferrer">Buy a domain</a>
-                    </div>
-                </div>
-                <form class="form reveal" id="contact-form">
-                    <div class="field">
-                        <label for="name">Name</label>
-                        <input id="name" class="input" type="text" name="name" placeholder="Your name" required>
-                    </div>
-                    <div class="field">
-                        <label for="email">Email</label>
-                        <input id="email" class="input" type="email" name="email" placeholder="Your email" required>
-                    </div>
-                    <div class="field">
-                        <label for="subject">Subject</label>
-                        <input id="subject" class="input" type="text" name="subject" placeholder="How can I help?" required>
-                    </div>
-                    <div class="field">
-                        <label for="type">Type of request</label>
-                        <select id="type" class="input" name="type" required>
-                            <option value="">Choose one</option>
-                            <option>Bug / Issue</option>
-                            <option>Feature / Build</option>
-                            <option>Collaboration</option>
-                            <option>Consultation</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="input" name="message" placeholder="Tell me about the project" required></textarea>
-                    </div>
-                    <button type="submit" class="btn solid">Send message</button>
-                </form>
+                <a class="glass workflow-card reveal" href="about.html">
+                    <span class="meta-label">About</span>
+                    <h4>Background, education & skills</h4>
+                    <p class="section-sub">My story, education timeline, and the stack I reach for.</p>
+                </a>
+                <a class="glass workflow-card reveal" href="projects.html">
+                    <span class="meta-label">Projects</span>
+                    <h4>Selected work & experience</h4>
+                    <p class="section-sub">Case studies, workflow, and awards along the way.</p>
+                </a>
+                <a class="glass workflow-card reveal" href="insights.html">
+                    <span class="meta-label">Insights</span>
+                    <h4>Writing & notes</h4>
+                    <p class="section-sub">How I approach design, code, and delivery.</p>
+                </a>
+                <a class="glass workflow-card reveal" href="contact.html">
+                    <span class="meta-label">Contact</span>
+                    <h4>Get in touch</h4>
+                    <p class="section-sub">Anonymous-friendly contact form and quick links.</p>
+                </a>
             </div>
         </section>
     </main>
 
     <footer class="shell">
         <p>(c) 2025 Adam Iman. Built with intent and a lot of coffee.</p>
+        <p style="margin-top:8px;">
+            <a href="about.html">About</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="projects.html">Projects</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="insights.html">Insights</a>
+            <span aria-hidden="true"> &middot; </span>
+            <a href="contact.html">Contact</a>
+        </p>
     </footer>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const body = document.body;
-    const scrollIndicator = document.querySelector('.scroll-indicator');
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    const sections = document.querySelectorAll('section');
-    const meters = document.querySelectorAll('.meter-fill');
-    const stats = document.querySelectorAll('.stat-number');
-    const reveals = document.querySelectorAll('.reveal');
-    const typing = document.querySelector('.typing-effect');
-    const themeToggle = document.getElementById('theme-toggle');
-    const motionToggle = document.getElementById('motion-toggle');
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-    const phrases = [
-        'IT enthusiast turning ideas into dependable systems.',
-        'Developer who ships clean, fast experiences.',
-        'Creative technologist blending code and design.'
-    ];
-
-    let phraseIndex = 0;
-    let charIndex = 0;
-
-    const setTheme = (mode) => {
-        body.classList.toggle('theme-light', mode === 'light');
-        themeToggle.textContent = mode === 'light' ? 'Dark' : 'Light';
-        localStorage.setItem('theme', mode);
-    };
-
-    const setMotion = (state) => {
-        const reduced = state === 'off';
-        body.classList.toggle('reduced-motion', reduced);
-        motionToggle.textContent = reduced ? 'Motion Off' : 'Motion On';
-        localStorage.setItem('motion', state);
-        if (reduced && typing) {
-            typing.textContent = phrases[0];
-        }
-    };
-
-    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-    const savedMotion = localStorage.getItem('motion') || (window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'off' : 'on');
-    setTheme(savedTheme);
-    setMotion(savedMotion);
-
-    const typeWriter = () => {
-        if (body.classList.contains('reduced-motion')) {
-            typing.textContent = phrases[phraseIndex];
-            return;
-        }
-        const current = phrases[phraseIndex];
-        if (charIndex <= current.length) {
-            typing.textContent = current.slice(0, charIndex);
-            charIndex++;
-            setTimeout(typeWriter, 32);
-        } else {
-            setTimeout(() => {
-                charIndex = 0;
-                phraseIndex = (phraseIndex + 1) % phrases.length;
-                typeWriter();
-            }, 1800);
-        }
-    };
-
-    const updateScrollIndicator = () => {
-        const maxScroll = document.body.scrollHeight - window.innerHeight;
-        const progress = maxScroll ? window.scrollY / maxScroll : 0;
-        scrollIndicator.style.transform = 'scaleX(' + progress + ')';
-    };
-
-    const highlightNav = () => {
-        let current = 'home';
-        sections.forEach(section => {
-            const top = section.getBoundingClientRect().top;
-            if (top <= 140) {
-                current = section.id;
-            }
-        });
-        navLinks.forEach(link => {
-            link.classList.toggle('active', link.getAttribute('href').slice(1) === current);
-        });
-    };
-
-    const animateStats = (entry) => {
-        const target = Number(entry.dataset.count || 0);
-        if (body.classList.contains('reduced-motion')) {
-            entry.textContent = target;
-            return;
-        }
-        let start = 0;
-        const step = () => {
-            start += Math.max(1, Math.ceil(target / 60));
-            if (start >= target) {
-                entry.textContent = target;
-                return;
-            }
-            entry.textContent = start;
-            requestAnimationFrame(step);
-        };
-        step();
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                if (entry.target.classList.contains('meter-fill')) {
-                    entry.target.style.width = entry.target.dataset.progress;
-                }
-                if (entry.target.classList.contains('stat-number') && !entry.target.dataset.animated) {
-                    entry.target.dataset.animated = 'true';
-                    animateStats(entry.target);
-                }
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.35 });
-
-    reveals.forEach(el => observer.observe(el));
-    meters.forEach(el => observer.observe(el));
-    stats.forEach(el => observer.observe(el));
-
-    filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const filter = btn.dataset.filter;
-            projectCards.forEach(card => {
-                const categories = (card.dataset.category || '').split(' ');
-                const show = filter === 'all' || categories.includes(filter);
-                card.style.display = show ? 'grid' : 'none';
-            });
-        });
-    });
-
-    document.querySelectorAll('.copy-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const text = btn.dataset.copy;
-            navigator.clipboard.writeText(text).then(() => {
-                btn.textContent = 'Copied';
-                setTimeout(() => btn.textContent = 'Copy ' + (text.includes('@') ? 'email' : 'phone'), 1000);
-            });
-        });
-    });
-
-    themeToggle.addEventListener('click', () => {
-        const next = body.classList.contains('theme-light') ? 'dark' : 'light';
-        setTheme(next);
-    });
-
-    motionToggle.addEventListener('click', () => {
-        const next = body.classList.contains('reduced-motion') ? 'on' : 'off';
-        setMotion(next);
-        if (next === 'on') {
-            phraseIndex = 0;
-            charIndex = 0;
-            setTimeout(typeWriter, 200);
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const id = link.getAttribute('href').slice(1);
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        });
-    });
-
-    document.getElementById('contact-form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you for your message! I will get back to you soon.');
-        e.target.reset();
-    });
-
-    window.addEventListener('scroll', () => {
-        updateScrollIndicator();
-        highlightNav();
-    });
-
-    updateScrollIndicator();
-    highlightNav();
-    if (!body.classList.contains('reduced-motion')) {
-        setTimeout(typeWriter, 400);
-    } else if (typing) {
-        typing.textContent = phrases[0];
-    }
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>
