@@ -3,19 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects | Adam Iman</title>
-<meta name="description" content="Selected projects by Adam Iman - IT enthusiast, developer, and creative technologist.">
+<title>Work | Adam Iman</title>
+<meta name="description" content="Projects by Adam Iman — 50+ live web apps, booking systems, payment gateways and campus tools.">
+<meta name="theme-color" content="#09090b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dynoz.site/projects.html">
 <meta property="og:site_name" content="Adam Iman">
-<meta property="og:title" content="Projects | Adam Iman">
-<meta property="og:description" content="Selected projects by Adam Iman - IT enthusiast, developer, and creative technologist.">
+<meta property="og:title" content="Work | Adam Iman">
+<meta property="og:description" content="Projects by Adam Iman — 50+ live web apps, booking systems, payment gateways and campus tools.">
 <meta property="og:image" content="https://dynoz.site/gambar.jpg">
 <meta property="og:image:width" content="810">
 <meta property="og:image:height" content="1080">
@@ -23,1005 +24,701 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Projects | Adam Iman">
-<meta name="twitter:description" content="Selected projects by Adam Iman - IT enthusiast, developer, and creative technologist.">
+<meta name="twitter:title" content="Work | Adam Iman">
+<meta name="twitter:description" content="Projects by Adam Iman — 50+ live web apps, booking systems, payment gateways and campus tools.">
 <meta name="twitter:image" content="https://dynoz.site/gambar.jpg">
 
 <!-- Canonical -->
 <link rel="canonical" href="https://dynoz.site/projects.html">
 </head>
 <body>
-    <div class="backdrop"></div>
-    <div class="corner-ticks"><span></span><span></span><span></span><span></span></div>
-    <div class="scroll-indicator"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
 
-    <div class="sidebar-cta">
-        <a href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WA</a>
-        <a href="mailto:Dynoz769@gmail.com" class="secondary">Email</a>
-    </div>
-
-    <header class="nav-shell shell">
-        <a class="brand" href="index.html">Adam Iman</a>
-        <nav>
-            <ul class="nav-menu">
+    <header class="nav container">
+        <div class="nav-inner">
+            <a class="brand" href="index.html"><span class="brand-mark">A</span>Adam Iman</a>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="insights.html">Insights</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-        <div class="controls">
-            <button class="toggle" id="theme-toggle" aria-label="Toggle light or dark mode">Light</button>
-            <a class="btn ghost resume-download" href="Resume.pdf" download>Resume</a>
+            <div class="nav-actions">
+                <a class="btn btn-ghost btn-sm btn-resume resume-download" href="Resume.pdf" download>Resume</a>
+                <a class="btn btn-primary btn-sm" href="contact.html">Let's talk</a>
+                <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span></button>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section id="projects" class="section shell" style="padding-top: 48px;">
-            <div class="section-head">
-                <div>
-                    <p class="eyebrow">Projects</p>
-                    <h1 class="hero-title" style="font-size: clamp(30px, 4vw, 44px);">Selected work.</h1>
-                    <p class="section-sub" style="max-width: 640px;">Work that balances usability, performance, and storytelling.</p>
-                </div>
-            </div>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="payments">Payments</button>
-                <button class="filter-btn" data-filter="system">Systems</button>
-                <button class="filter-btn" data-filter="client">Client work</button>
-            </div>
-            <div class="project-grid">
-                <article class="glass project-card reveal" data-category="payments">
-                    <div class="project-header">
+    <main class="container">
+        <section class="page-hero">
+            <span class="eyebrow reveal">Work</span>
+            <h1 class="display reveal">Things I've built.</h1>
+            <p class="lead reveal">53 live projects &mdash; from payment gateways and booking systems to campus tools. Every card opens the live site.</p>
+        </section>
+
+        <section class="section" style="padding-top: 8px;">
+            <div class="section-head reveal"><div><h2>Featured</h2><p>Three projects I'm most proud of.</p></div></div>
+            <div class="featured-list">
+                <article class="card featured-project reveal">
+                    <div class="shot"><span class="shot-fallback">B</span><img src="assets/shots/dynoz769-github-io-bayarterus.webp" loading="lazy" alt="BayarTerus preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Payment gateway</span>
                         <h3>BayarTerus</h3>
-                        <div class="project-links">
-                            <a class="badge" href="https://dynoz769.github.io/BayarTerus/" target="_blank" rel="noreferrer">Visit site</a>
-                            <a class="badge" href="https://github.com/Dynoz769/BayarTerus" target="_blank" rel="noreferrer">GitHub</a>
+                        <p>Payment gateway web app for collecting online payments quickly and reliably.</p>
+                        <div class="tags"><span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">Payments</span></div>
+                        <div class="links">
+                            <a class="btn btn-primary btn-sm" href="https://dynoz769.github.io/BayarTerus/" target="_blank" rel="noreferrer">Visit site <span class="arrow">&rarr;</span></a>
+                            <a class="btn btn-ghost btn-sm" href="https://github.com/Dynoz769/BayarTerus" target="_blank" rel="noreferrer">GitHub</a>
                         </div>
                     </div>
-                    <p class="section-sub">Payment gateway web app for collecting online payments quickly and reliably.</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Payments</span>
-                    </div>
                 </article>
-                <article class="glass project-card reveal" data-category="system">
-                    <div class="project-header">
+                <article class="card featured-project reveal">
+                    <div class="shot"><span class="shot-fallback">PH</span><img src="assets/shots/dynoz769-github-io-human-resource-management-system.webp" loading="lazy" alt="PeopleHub HRMS preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">System</span>
                         <h3>PeopleHub HRMS</h3>
-                        <div class="project-links">
-                            <a class="badge" href="https://dynoz769.github.io/Human-Resource-Management-System/" target="_blank" rel="noreferrer">Visit site</a>
-                            <a class="badge" href="https://github.com/Dynoz769/Human-Resource-Management-System" target="_blank" rel="noreferrer">GitHub</a>
+                        <p>Human resource management system for handling staff, records, and company operations.</p>
+                        <div class="tags"><span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">Render</span></div>
+                        <div class="links">
+                            <a class="btn btn-primary btn-sm" href="https://dynoz769.github.io/Human-Resource-Management-System/" target="_blank" rel="noreferrer">Visit site <span class="arrow">&rarr;</span></a>
+                            <a class="btn btn-ghost btn-sm" href="https://github.com/Dynoz769/Human-Resource-Management-System" target="_blank" rel="noreferrer">GitHub</a>
                         </div>
                     </div>
-                    <p class="section-sub">Human resource management system for handling staff, records, and company operations.</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">Tailwind</span>
-                        <span class="tag">Render</span>
-                    </div>
                 </article>
-                <article class="glass project-card reveal" data-category="client payments">
-                    <div class="project-header">
+                <article class="card featured-project reveal">
+                    <div class="shot"><span class="shot-fallback">HK</span><img src="assets/shots/dynoz769-github-io-homestaykawee.webp" loading="lazy" alt="Homestay Kawe preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Client · Booking</span>
                         <h3>Homestay Kawe</h3>
-                        <div class="project-links">
-                            <a class="badge" href="https://dynoz769.github.io/HomeStayKawee/" target="_blank" rel="noreferrer">Visit site</a>
-                            <a class="badge" href="https://github.com/Dynoz769/HomeStayKawee" target="_blank" rel="noreferrer">GitHub</a>
+                        <p>Room booking site with an integrated Bcl.my payment gateway for a real homestay business.</p>
+                        <div class="tags"><span class="tag">HTML</span><span class="tag">Node.js</span><span class="tag">Bcl.my</span></div>
+                        <div class="links">
+                            <a class="btn btn-primary btn-sm" href="https://dynoz769.github.io/HomeStayKawee/" target="_blank" rel="noreferrer">Visit site <span class="arrow">&rarr;</span></a>
+                            <a class="btn btn-ghost btn-sm" href="https://github.com/Dynoz769/HomeStayKawee" target="_blank" rel="noreferrer">GitHub</a>
                         </div>
                     </div>
-                    <p class="section-sub">Room booking site with an integrated Bcl.my payment gateway for a real homestay business.</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Bcl.my</span>
-                    </div>
                 </article>
             </div>
         </section>
 
-        <section id="more-projects" class="section shell" style="padding-top: 24px;">
-            <div class="section-head">
-                <div>
-                    <p class="eyebrow">// All projects</p>
-                    <h2 class="section-title">Things I've built.</h2>
-                    <p class="section-sub">Every live site from my GitHub — click any card to visit it.</p>
-                </div>
+        <section class="section" id="all-projects">
+            <div class="section-head reveal"><div><h2>All projects</h2><p>Filter by type or search by name.</p></div></div>
+            <div class="toolbar reveal">
+                <div class="chips"><button class="chip active" data-filter="all">All<span class="count">53</span></button><button class="chip" data-filter="client">Client work<span class="count">22</span></button><button class="chip" data-filter="product">Products &amp; tools<span class="count">14</span></button><button class="chip" data-filter="campus">Campus<span class="count">12</span></button><button class="chip" data-filter="personal">Personal<span class="count">5</span></button></div>
+                <label class="search"><span aria-hidden="true">&#9906;</span><input id="project-search" type="search" placeholder="Search projects…" aria-label="Search projects"></label>
             </div>
-            <div class="project-grid">
-                <a href="https://dynoz.bcl.my/booking/resort-chalet" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz.bcl.my/booking/resort-chalet" loading="lazy" alt="Booking Web site preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Homestay Kawe</span>
-                    <h3>Booking Web</h3>
-                    <p class="section-sub">Room Or Hotel Booking With Bcl Payment Gateway</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Bcl.my</span>
+            <div class="grid-3" id="project-grid">
+                <a class="card project" data-cat="client" href="https://dynoz.bcl.my/booking/resort-chalet" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">BW</span><img src="assets/shots/dynoz-bcl-my-booking-resort-chalet.webp" loading="lazy" alt="Booking Web preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Homestay Kawe</span>
+                        <h3>Booking Web</h3>
+                        <p>Room Or Hotel Booking With Bcl Payment Gateway</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">Node.js</span><span class="tag">Bcl.my</span></div>
                     </div>
                 </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/moneymanagement/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">MM</span><img src="assets/shots/dynoz769-github-io-moneymanagement.webp" loading="lazy" alt="Money Management preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Personal Project</span>
+                        <h3>Money Management</h3>
+                        <p>Track and manage personal finances with a simple web app</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/revamp-wiradigital/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">RW</span><img src="assets/shots/dynoz769-github-io-revamp-wiradigital.webp" loading="lazy" alt="Revamp Wiradigital preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Client Project</span>
+                        <h3>Revamp Wiradigital</h3>
+                        <p>Redesign and rebuild of the Wiradigital company website</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/DOA-FOR-PURPOSE/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">DF</span><img src="assets/shots/dynoz769-github-io-doa-for-purpose.webp" loading="lazy" alt="Doa For Purpose preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Personal Project</span>
+                        <h3>Doa For Purpose</h3>
+                        <p>Web app collection of doa mengikut niat dan keperluan harian</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/COLLAGE-PARKING/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">CP</span><img src="assets/shots/dynoz769-github-io-collage-parking.webp" loading="lazy" alt="College Parking preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Academic Project</span>
+                        <h3>College Parking</h3>
+                        <p>System pengurusan tempat letak kereta untuk kampus</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://d7.bcl.my/form/merdeka-running-2026" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">MS</span><img src="assets/shots/d7-bcl-my-form-merdeka-running-2026.webp" loading="lazy" alt="Merch Store preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Merdeka Run 2026</span>
+                        <h3>Merch Store</h3>
+                        <p>Merch Landing Page</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">Css</span><span class="tag">Bcl.my</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/Human-Resource-Management-System/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">HR</span><img src="assets/shots/dynoz769-github-io-human-resource-management-system.webp" loading="lazy" alt="Human Resource System preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">PeopleHub HRMS</span>
+                        <h3>Human Resource System</h3>
+                        <p>Company Management System</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">Css</span><span class="tag">Render</span><span class="tag">Tailwind</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz.bcl.my/form/dynodonate" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">D</span><img src="assets/shots/dynoz-bcl-my-form-dynodonate.webp" loading="lazy" alt="DynoDonate preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Donation Form</span>
+                        <h3>DynoDonate</h3>
+                        <p>Minimalist Web For Donation</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">Css</span><span class="tag">Bcl.my</span><span class="tag">Tailwind</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/BayarTerus/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">B</span><img src="assets/shots/dynoz769-github-io-bayarterus.webp" loading="lazy" alt="BayarTerus preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Payment Gateway</span>
+                        <h3>BayarTerus</h3>
+                        <p>Payment gateway web app for collecting online payments</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/UPSIHub/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">U</span><img src="assets/shots/dynoz769-github-io-upsihub.webp" loading="lazy" alt="UPSIHub preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Student Platform</span>
+                        <h3>UPSIHub</h3>
+                        <p>Central hub for UPSI students — resources and info in one place</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/UPSI-DATA/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">UD</span><img src="assets/shots/dynoz769-github-io-upsi-data.webp" loading="lazy" alt="UPSI Data preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Data Portal</span>
+                        <h3>UPSI Data</h3>
+                        <p>Data portal for UPSI records and information</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/BLOOD-DIAMOND-RING-BUSINESS/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">BD</span><img src="assets/shots/dynoz769-github-io-blood-diamond-ring-business.webp" loading="lazy" alt="Blood Diamond Ring Business preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Business Site</span>
+                        <h3>Blood Diamond Ring Business</h3>
+                        <p>Business landing page for the Blood Diamond Ring venture</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/RIDEWITHME2.0/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">MC</span><img src="assets/shots/dynoz769-github-io-ridewithme2-0.webp" loading="lazy" alt="Merch &amp; Cabutan preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Ride With Me 2.0</span>
+                        <h3>Merch &amp; Cabutan</h3>
+                        <p>Merchandise and lucky draw page for Ride With Me 2.0</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/rwm/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">RM</span><img src="assets/shots/dynoz769-github-io-rwm.webp" loading="lazy" alt="RWM Merch (Mirror) preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Ride With Me 2.0</span>
+                        <h3>RWM Merch (Mirror)</h3>
+                        <p>Alternate deployment of the Ride With Me 2.0 merch page</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/merdeka-run/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">LU</span><img src="assets/shots/dynoz769-github-io-merdeka-run.webp" loading="lazy" alt="Larilah Untuk Negara preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Merdeka Run 2026</span>
+                        <h3>Larilah Untuk Negara</h3>
+                        <p>Event site for Merdeka Run 2026</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/TelekungMaryam/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">TM</span><img src="assets/shots/dynoz769-github-io-telekungmaryam.webp" loading="lazy" alt="Telekung Maryam Store preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Telekung Maryam</span>
+                        <h3>Telekung Maryam Store</h3>
+                        <p>Online store for Telekung Maryam collections</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/TM-LANDINGPAGE/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">PC</span><img src="assets/shots/dynoz769-github-io-tm-landingpage.webp" loading="lazy" alt="Premium Collection Landing preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Telekung Maryam</span>
+                        <h3>Premium Collection Landing</h3>
+                        <p>Landing page showcasing Maryam Dhuha, Zaraa, Basic Sofea &amp; NurMaryam</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/TM-Business-Card/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">DB</span><img src="assets/shots/dynoz769-github-io-tm-business-card.webp" loading="lazy" alt="Digital Business Card preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Telekung Maryam</span>
+                        <h3>Digital Business Card</h3>
+                        <p>Digital business card for Telekung Maryam</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/car-eligibility-calculator-atikah-suki/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">CE</span><img src="assets/shots/dynoz769-github-io-car-eligibility-calculator-atikah-suki.webp" loading="lazy" alt="Car Eligibility Calculator preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Proton Jawira</span>
+                        <h3>Car Eligibility Calculator</h3>
+                        <p>Semak kelayakan gaji untuk model Proton dan mohon secara maya</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/TAUFIK-RIMAU-PUTIH/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">SK</span><img src="assets/shots/dynoz769-github-io-taufik-rimau-putih.webp" loading="lazy" alt="Survey Kereta Proton preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Proton Sales</span>
+                        <h3>Survey Kereta Proton</h3>
+                        <p>Lihat model Proton dan terus hubungi jurujual di WhatsApp</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/Hokai-Calculator/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">SG</span><img src="assets/shots/dynoz769-github-io-hokai-calculator.webp" loading="lazy" alt="Salary &amp; Gold Tracker preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Hokai Family</span>
+                        <h3>Salary &amp; Gold Tracker</h3>
+                        <p>Sistem gaji dan kutipan emas untuk Hokai Family</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/WEEKLY-TASK-HOKAI/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">LG</span><img src="assets/shots/dynoz769-github-io-weekly-task-hokai.webp" loading="lazy" alt="Leave &amp; Gold Calendar preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Hokai Family</span>
+                        <h3>Leave &amp; Gold Calendar</h3>
+                        <p>Kalendar cuti dan gold untuk ahli Hokai</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/NIGHTCLUB-JOB-TUTORIAL/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">NT</span><img src="assets/shots/dynoz769-github-io-nightclub-job-tutorial.webp" loading="lazy" alt="Nightclub Training preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Staff HQ</span>
+                        <h3>Nightclub Training</h3>
+                        <p>Training portal for roleplay nightclub staff</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/HomeStayKawee/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">HB</span><img src="assets/shots/dynoz769-github-io-homestaykawee.webp" loading="lazy" alt="Homestay Booking preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Homestay Kawe</span>
+                        <h3>Homestay Booking</h3>
+                        <p>Booking &amp; payment gateway for Homestay Kawe</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/Kyuu_Store/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">KS</span><img src="assets/shots/dynoz769-github-io-kyuu-store.webp" loading="lazy" alt="KYUU Store preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Online Store</span>
+                        <h3>KYUU Store</h3>
+                        <p>Simple online storefront for KYUU</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/BRISWALKREGISTER/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">PB</span><img src="assets/shots/dynoz769-github-io-briswalkregister.webp" loading="lazy" alt="Pendaftaran Briswalk preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Event Registration</span>
+                        <h3>Pendaftaran Briswalk</h3>
+                        <p>Registration form for the Briswalk event</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/COUNTDOWN-INTERN/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">PC</span><img src="assets/shots/dynoz769-github-io-countdown-intern.webp" loading="lazy" alt="Pro Countdown App preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Utility</span>
+                        <h3>Pro Countdown App</h3>
+                        <p>Countdown timer for internship days</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/COUNTDOWN-OJT/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">OC</span><img src="assets/shots/dynoz769-github-io-countdown-ojt.webp" loading="lazy" alt="OJT Countdown Timer preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Utility</span>
+                        <h3>OJT Countdown Timer</h3>
+                        <p>Countdown timer for On-the-Job Training</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/PayPlus/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">P</span><img src="assets/shots/dynoz769-github-io-payplus.webp" loading="lazy" alt="PayPlus preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Payments</span>
+                        <h3>PayPlus</h3>
+                        <p>Stripe-powered payment page</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">JavaScript</span><span class="tag">Stripe</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/agrement-generator/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">AG</span><img src="assets/shots/dynoz769-github-io-agrement-generator.webp" loading="lazy" alt="Agreement Generator preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Utility</span>
+                        <h3>Agreement Generator</h3>
+                        <p>Generate surat pengesahan pembelian instantly</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/ADUAN-DEWAN-MAKAN-KVPM/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">AD</span><img src="assets/shots/dynoz769-github-io-aduan-dewan-makan-kvpm.webp" loading="lazy" alt="Aduan Dewan Makan preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">KV Pasir Mas</span>
+                        <h3>Aduan Dewan Makan</h3>
+                        <p>Sistem aduan dewan makan untuk pelajar KVPM</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/System-Aduan-Kolej/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">SA</span><img src="assets/shots/dynoz769-github-io-system-aduan-kolej.webp" loading="lazy" alt="Sistem Aduan Pelajar preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">KV Pasir Mas</span>
+                        <h3>Sistem Aduan Pelajar</h3>
+                        <p>Platform aduan pelajar kolej</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/LIST-AJK-KEM-OJT-2026/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">AK</span><img src="assets/shots/dynoz769-github-io-list-ajk-kem-ojt-2026.webp" loading="lazy" alt="AJK Kem OJT 2026 preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">KV Pasir Mas</span>
+                        <h3>AJK Kem OJT 2026</h3>
+                        <p>Senarai AJK Kem OJT 2026</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/MPP-KVPM/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">MK</span><img src="assets/shots/dynoz769-github-io-mpp-kvpm.webp" loading="lazy" alt="MPP KVPM preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">KV Pasir Mas</span>
+                        <h3>MPP KVPM</h3>
+                        <p>Official page for Majlis Perwakilan Pelajar KVPM</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/Clients-Session-Data/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">CS</span><img src="assets/shots/dynoz769-github-io-clients-session-data.webp" loading="lazy" alt="Clients Session Data preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Client Tool</span>
+                        <h3>Clients Session Data</h3>
+                        <p>Login-protected client session tracker</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/weqwsad/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">KM</span><img src="assets/shots/dynoz769-github-io-weqwsad.webp" loading="lazy" alt="KVPM Mall preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">KVPM Mall</span>
+                        <h3>KVPM Mall</h3>
+                        <p>E-commerce mall prototype for KVPM</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/kl/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">KM</span><img src="assets/shots/dynoz769-github-io-kl.webp" loading="lazy" alt="KVPM Mall v2 preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">KVPM Mall</span>
+                        <h3>KVPM Mall v2</h3>
+                        <p>Second iteration of the KVPM Mall prototype</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/ADMIN-GARAJ/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">GA</span><img src="assets/shots/dynoz769-github-io-admin-garaj.webp" loading="lazy" alt="Garage Admin preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Sistem Garaj</span>
+                        <h3>Garage Admin</h3>
+                        <p>Admin panel for the garage management system</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/GARAGE-1/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">GS</span><img src="assets/shots/dynoz769-github-io-garage-1.webp" loading="lazy" alt="Garage System preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Sistem Garaj</span>
+                        <h3>Garage System</h3>
+                        <p>Garage management system with login</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="product" href="https://dynoz769.github.io/taekwondo/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">TS</span><img src="assets/shots/dynoz769-github-io-taekwondo.webp" loading="lazy" alt="Taekwondo System preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Club System</span>
+                        <h3>Taekwondo System</h3>
+                        <p>Management system for a taekwondo club</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/Kehadiran-Pelajar/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">KH</span><img src="assets/shots/dynoz769-github-io-kehadiran-pelajar.webp" loading="lazy" alt="Kehadiran &amp; Hasil Kerja preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Academic Tool</span>
+                        <h3>Kehadiran &amp; Hasil Kerja</h3>
+                        <p>Track student attendance and coursework</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/System-KV2/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">SS</span><img src="assets/shots/dynoz769-github-io-system-kv2.webp" loading="lazy" alt="School System preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Academic Tool</span>
+                        <h3>School System</h3>
+                        <p>School management system prototype</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/DEBATSESI2/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">PK</span><img src="assets/shots/dynoz769-github-io-debatsesi2.webp" loading="lazy" alt="Portal Kelas Perbahasan preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Academic Tool</span>
+                        <h3>Portal Kelas Perbahasan</h3>
+                        <p>Portal for debate class sessions</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/MPU2422/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">M2</span><img src="assets/shots/dynoz769-github-io-mpu2422.webp" loading="lazy" alt="MPU 2422 preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Academic Project</span>
+                        <h3>MPU 2422</h3>
+                        <p>Course project site for MPU 2422</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/LAWATAN/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">L</span><img src="assets/shots/dynoz769-github-io-lawatan.webp" loading="lazy" alt="Lawatan preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Academic Project</span>
+                        <h3>Lawatan</h3>
+                        <p>Page for a study visit</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/MZH-TRAVEL/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">MT</span><img src="assets/shots/dynoz769-github-io-mzh-travel.webp" loading="lazy" alt="MZH Travel preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Travel Agency</span>
+                        <h3>MZH Travel</h3>
+                        <p>Landing page for MZH Travel</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/LupyPortfolio/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">MZ</span><img src="assets/shots/dynoz769-github-io-lupyportfolio.webp" loading="lazy" alt="Muhammad Zulfi Hakim preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Client Portfolio</span>
+                        <h3>Muhammad Zulfi Hakim</h3>
+                        <p>Personal portfolio built for a client</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="client" href="https://dynoz769.github.io/MIRULPORTFOLIO/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">AH</span><img src="assets/shots/dynoz769-github-io-mirulportfolio.webp" loading="lazy" alt="Amirul Haikal preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Client Portfolio</span>
+                        <h3>Amirul Haikal</h3>
+                        <p>Personal portfolio built for a client</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="personal" href="https://dynoz769.github.io/AdamWeb/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">AI</span><img src="assets/shots/dynoz769-github-io-adamweb.webp" loading="lazy" alt="Adam Iman (v1) preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Personal</span>
+                        <h3>Adam Iman (v1)</h3>
+                        <p>Earlier version of my personal website</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="personal" href="https://dynoz769.github.io/Test-Page/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">DW</span><img src="assets/shots/dynoz769-github-io-test-page.webp" loading="lazy" alt="Dynoz Web preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Personal</span>
+                        <h3>Dynoz Web</h3>
+                        <p>Experimental landing page</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="personal" href="https://dynoz769.github.io/musicbox/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">PM</span><img src="assets/shots/dynoz769-github-io-musicbox.webp" loading="lazy" alt="Private Music Player preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Personal</span>
+                        <h3>Private Music Player</h3>
+                        <p>Personal web music player</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="personal" href="https://dynoz769.github.io/net/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">RP</span><img src="assets/shots/dynoz769-github-io-net.webp" loading="lazy" alt="React Playground preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Personal</span>
+                        <h3>React Playground</h3>
+                        <p>React app built with create-react-app</p>
+                        <div class="tags"><span class="tag">React</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+                <a class="card project" data-cat="personal" href="https://dynoz769.github.io/NetflixByAdam/" target="_blank" rel="noreferrer">
+                    <span class="corner-arrow">&#8599;</span>
+                    <div class="shot"><span class="shot-fallback">N</span><img src="assets/shots/dynoz769-github-io-netflixbyadam.webp" loading="lazy" alt="NetflixByAdam preview"></div>
+                    <div class="project-body">
+                        <span class="card-label">Personal</span>
+                        <h3>NetflixByAdam</h3>
+                        <p>Netflix-style themed web page</p>
+                        <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </a>
+            </div>
+            <p class="empty" id="project-empty">No projects match that search.</p>
+            <div class="show-more-wrap"><button class="btn btn-ghost" id="show-more">Show more</button></div>
+        </section>
 
-                <a href="https://dynoz769.github.io/moneymanagement/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/moneymanagement/" loading="lazy" alt="Money Management preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Personal Project</span>
-                    <h3>Money Management</h3>
-                    <p class="section-sub">Track and manage personal finances with a simple web app</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-
-                <a href="https://dynoz769.github.io/revamp-wiradigital/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/revamp-wiradigital/" loading="lazy" alt="Revamp Wiradigital preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Client Project</span>
-                    <h3>Revamp Wiradigital</h3>
-                    <p class="section-sub">Redesign and rebuild of the Wiradigital company website</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-
-                <a href="https://dynoz769.github.io/DOA-FOR-PURPOSE/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/DOA-FOR-PURPOSE/" loading="lazy" alt="Doa For Purpose preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Personal Project</span>
-                    <h3>Doa For Purpose</h3>
-                    <p class="section-sub">Web app collection of doa mengikut niat dan keperluan harian</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-
-                <a href="https://dynoz769.github.io/COLLAGE-PARKING/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/COLLAGE-PARKING/" loading="lazy" alt="College Parking preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Academic Project</span>
-                    <h3>College Parking</h3>
-                    <p class="section-sub">System pengurusan tempat letak kereta untuk kampus</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-
-                <a href="https://d7.bcl.my/form/merdeka-running-2026" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://d7.bcl.my/form/merdeka-running-2026" loading="lazy" alt="Merch Store site preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Merdeka Run 2026</span>
-                    <h3>Merch Store</h3>
-                    <p class="section-sub">Merch Landing Page</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">Css</span>
-                        <span class="tag">Bcl.my</span>
-                    </div>
-                </a>
-
-                <a href="https://dynoz769.github.io/Human-Resource-Management-System/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/Human-Resource-Management-System/" loading="lazy" alt="Merch Store site preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">PeopleHub HRMS</span>
-                    <h3>Human Resource System</h3>
-                    <p class="section-sub">Company Management System</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">Css</span>
-                        <span class="tag">Render</span>
-                        <span class="tag">Tailwind</span>
-                    </div>
-                </a>
-
-                <a href="https://dynoz.bcl.my/form/dynodonate" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz.bcl.my/form/dynodonate" loading="lazy" alt="Merch Store site preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Donation Form</span>
-                    <h3>DynoDonate</h3>
-                    <p class="section-sub">Minimalist Web For Donation</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">Css</span>
-                        <span class="tag">Bcl.my</span>
-                        <span class="tag">Tailwind</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/BayarTerus/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/BayarTerus/" loading="lazy" alt="BayarTerus preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Payment Gateway</span>
-                    <h3>BayarTerus</h3>
-                    <p class="section-sub">Payment gateway web app for collecting online payments</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/UPSIHub/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/UPSIHub/" loading="lazy" alt="UPSIHub preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Student Platform</span>
-                    <h3>UPSIHub</h3>
-                    <p class="section-sub">Central hub for UPSI students — resources and info in one place</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/UPSI-DATA/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/UPSI-DATA/" loading="lazy" alt="UPSI Data preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Data Portal</span>
-                    <h3>UPSI Data</h3>
-                    <p class="section-sub">Data portal for UPSI records and information</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/BLOOD-DIAMOND-RING-BUSINESS/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/BLOOD-DIAMOND-RING-BUSINESS/" loading="lazy" alt="Blood Diamond Ring Business preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Business Site</span>
-                    <h3>Blood Diamond Ring Business</h3>
-                    <p class="section-sub">Business landing page for the Blood Diamond Ring venture</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/RIDEWITHME2.0/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/RIDEWITHME2.0/" loading="lazy" alt="Merch &amp; Cabutan preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Ride With Me 2.0</span>
-                    <h3>Merch &amp; Cabutan</h3>
-                    <p class="section-sub">Merchandise and lucky draw page for Ride With Me 2.0</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/rwm/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/rwm/" loading="lazy" alt="RWM Merch (Mirror) preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Ride With Me 2.0</span>
-                    <h3>RWM Merch (Mirror)</h3>
-                    <p class="section-sub">Alternate deployment of the Ride With Me 2.0 merch page</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/merdeka-run/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/merdeka-run/" loading="lazy" alt="Larilah Untuk Negara preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Merdeka Run 2026</span>
-                    <h3>Larilah Untuk Negara</h3>
-                    <p class="section-sub">Event site for Merdeka Run 2026</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/TelekungMaryam/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/TelekungMaryam/" loading="lazy" alt="Telekung Maryam Store preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Telekung Maryam</span>
-                    <h3>Telekung Maryam Store</h3>
-                    <p class="section-sub">Online store for Telekung Maryam collections</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/TM-LANDINGPAGE/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/TM-LANDINGPAGE/" loading="lazy" alt="Premium Collection Landing preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Telekung Maryam</span>
-                    <h3>Premium Collection Landing</h3>
-                    <p class="section-sub">Landing page showcasing Maryam Dhuha, Zaraa, Basic Sofea &amp; NurMaryam</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/TM-Business-Card/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/TM-Business-Card/" loading="lazy" alt="Digital Business Card preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Telekung Maryam</span>
-                    <h3>Digital Business Card</h3>
-                    <p class="section-sub">Digital business card for Telekung Maryam</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/car-eligibility-calculator-atikah-suki/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/car-eligibility-calculator-atikah-suki/" loading="lazy" alt="Car Eligibility Calculator preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Proton Jawira</span>
-                    <h3>Car Eligibility Calculator</h3>
-                    <p class="section-sub">Semak kelayakan gaji untuk model Proton dan mohon secara maya</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/TAUFIK-RIMAU-PUTIH/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/TAUFIK-RIMAU-PUTIH/" loading="lazy" alt="Survey Kereta Proton preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Proton Sales</span>
-                    <h3>Survey Kereta Proton</h3>
-                    <p class="section-sub">Lihat model Proton dan terus hubungi jurujual di WhatsApp</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/Hokai-Calculator/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/Hokai-Calculator/" loading="lazy" alt="Salary &amp; Gold Tracker preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Hokai Family</span>
-                    <h3>Salary &amp; Gold Tracker</h3>
-                    <p class="section-sub">Sistem gaji dan kutipan emas untuk Hokai Family</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/WEEKLY-TASK-HOKAI/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/WEEKLY-TASK-HOKAI/" loading="lazy" alt="Leave &amp; Gold Calendar preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Hokai Family</span>
-                    <h3>Leave &amp; Gold Calendar</h3>
-                    <p class="section-sub">Kalendar cuti dan gold untuk ahli Hokai</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/NIGHTCLUB-JOB-TUTORIAL/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/NIGHTCLUB-JOB-TUTORIAL/" loading="lazy" alt="Nightclub Training preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Staff HQ</span>
-                    <h3>Nightclub Training</h3>
-                    <p class="section-sub">Training portal for roleplay nightclub staff</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/HomeStayKawee/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/HomeStayKawee/" loading="lazy" alt="Homestay Booking preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Homestay Kawe</span>
-                    <h3>Homestay Booking</h3>
-                    <p class="section-sub">Booking &amp; payment gateway for Homestay Kawe</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/Kyuu_Store/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/Kyuu_Store/" loading="lazy" alt="KYUU Store preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Online Store</span>
-                    <h3>KYUU Store</h3>
-                    <p class="section-sub">Simple online storefront for KYUU</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/BRISWALKREGISTER/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/BRISWALKREGISTER/" loading="lazy" alt="Pendaftaran Briswalk preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Event Registration</span>
-                    <h3>Pendaftaran Briswalk</h3>
-                    <p class="section-sub">Registration form for the Briswalk event</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/COUNTDOWN-INTERN/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/COUNTDOWN-INTERN/" loading="lazy" alt="Pro Countdown App preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Utility</span>
-                    <h3>Pro Countdown App</h3>
-                    <p class="section-sub">Countdown timer for internship days</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/COUNTDOWN-OJT/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/COUNTDOWN-OJT/" loading="lazy" alt="OJT Countdown Timer preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Utility</span>
-                    <h3>OJT Countdown Timer</h3>
-                    <p class="section-sub">Countdown timer for On-the-Job Training</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/PayPlus/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/PayPlus/" loading="lazy" alt="PayPlus preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Payments</span>
-                    <h3>PayPlus</h3>
-                    <p class="section-sub">Stripe-powered payment page</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Stripe</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/agrement-generator/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/agrement-generator/" loading="lazy" alt="Agreement Generator preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Utility</span>
-                    <h3>Agreement Generator</h3>
-                    <p class="section-sub">Generate surat pengesahan pembelian instantly</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/ADUAN-DEWAN-MAKAN-KVPM/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/ADUAN-DEWAN-MAKAN-KVPM/" loading="lazy" alt="Aduan Dewan Makan preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">KV Pasir Mas</span>
-                    <h3>Aduan Dewan Makan</h3>
-                    <p class="section-sub">Sistem aduan dewan makan untuk pelajar KVPM</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/System-Aduan-Kolej/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/System-Aduan-Kolej/" loading="lazy" alt="Sistem Aduan Pelajar preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">KV Pasir Mas</span>
-                    <h3>Sistem Aduan Pelajar</h3>
-                    <p class="section-sub">Platform aduan pelajar kolej</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/LIST-AJK-KEM-OJT-2026/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/LIST-AJK-KEM-OJT-2026/" loading="lazy" alt="AJK Kem OJT 2026 preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">KV Pasir Mas</span>
-                    <h3>AJK Kem OJT 2026</h3>
-                    <p class="section-sub">Senarai AJK Kem OJT 2026</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/MPP-KVPM/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/MPP-KVPM/" loading="lazy" alt="MPP KVPM preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">KV Pasir Mas</span>
-                    <h3>MPP KVPM</h3>
-                    <p class="section-sub">Official page for Majlis Perwakilan Pelajar KVPM</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/Clients-Session-Data/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/Clients-Session-Data/" loading="lazy" alt="Clients Session Data preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Client Tool</span>
-                    <h3>Clients Session Data</h3>
-                    <p class="section-sub">Login-protected client session tracker</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/weqwsad/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/weqwsad/" loading="lazy" alt="KVPM Mall preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">KVPM Mall</span>
-                    <h3>KVPM Mall</h3>
-                    <p class="section-sub">E-commerce mall prototype for KVPM</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/kl/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/kl/" loading="lazy" alt="KVPM Mall v2 preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">KVPM Mall</span>
-                    <h3>KVPM Mall v2</h3>
-                    <p class="section-sub">Second iteration of the KVPM Mall prototype</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/ADMIN-GARAJ/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/ADMIN-GARAJ/" loading="lazy" alt="Garage Admin preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Sistem Garaj</span>
-                    <h3>Garage Admin</h3>
-                    <p class="section-sub">Admin panel for the garage management system</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/GARAGE-1/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/GARAGE-1/" loading="lazy" alt="Garage System preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Sistem Garaj</span>
-                    <h3>Garage System</h3>
-                    <p class="section-sub">Garage management system with login</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/taekwondo/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/taekwondo/" loading="lazy" alt="Taekwondo System preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Club System</span>
-                    <h3>Taekwondo System</h3>
-                    <p class="section-sub">Management system for a taekwondo club</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/Kehadiran-Pelajar/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/Kehadiran-Pelajar/" loading="lazy" alt="Kehadiran &amp; Hasil Kerja preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Academic Tool</span>
-                    <h3>Kehadiran &amp; Hasil Kerja</h3>
-                    <p class="section-sub">Track student attendance and coursework</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/System-KV2/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/System-KV2/" loading="lazy" alt="School System preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Academic Tool</span>
-                    <h3>School System</h3>
-                    <p class="section-sub">School management system prototype</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/DEBATSESI2/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/DEBATSESI2/" loading="lazy" alt="Portal Kelas Perbahasan preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Academic Tool</span>
-                    <h3>Portal Kelas Perbahasan</h3>
-                    <p class="section-sub">Portal for debate class sessions</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/MPU2422/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/MPU2422/" loading="lazy" alt="MPU 2422 preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Academic Project</span>
-                    <h3>MPU 2422</h3>
-                    <p class="section-sub">Course project site for MPU 2422</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/LAWATAN/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/LAWATAN/" loading="lazy" alt="Lawatan preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Academic Project</span>
-                    <h3>Lawatan</h3>
-                    <p class="section-sub">Page for a study visit</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/MZH-TRAVEL/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/MZH-TRAVEL/" loading="lazy" alt="MZH Travel preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Travel Agency</span>
-                    <h3>MZH Travel</h3>
-                    <p class="section-sub">Landing page for MZH Travel</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/LupyPortfolio/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/LupyPortfolio/" loading="lazy" alt="Muhammad Zulfi Hakim preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Client Portfolio</span>
-                    <h3>Muhammad Zulfi Hakim</h3>
-                    <p class="section-sub">Personal portfolio built for a client</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/MIRULPORTFOLIO/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/MIRULPORTFOLIO/" loading="lazy" alt="Amirul Haikal preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Client Portfolio</span>
-                    <h3>Amirul Haikal</h3>
-                    <p class="section-sub">Personal portfolio built for a client</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/AdamWeb/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/AdamWeb/" loading="lazy" alt="Adam Iman (v1) preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Personal</span>
-                    <h3>Adam Iman (v1)</h3>
-                    <p class="section-sub">Earlier version of my personal website</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/Test-Page/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/Test-Page/" loading="lazy" alt="Dynoz Web preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Personal</span>
-                    <h3>Dynoz Web</h3>
-                    <p class="section-sub">Experimental landing page</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/musicbox/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/musicbox/" loading="lazy" alt="Private Music Player preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Personal</span>
-                    <h3>Private Music Player</h3>
-                    <p class="section-sub">Personal web music player</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/net/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/net/" loading="lazy" alt="React Playground preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Personal</span>
-                    <h3>React Playground</h3>
-                    <p class="section-sub">React app built with create-react-app</p>
-                    <div class="tag-row">
-                        <span class="tag">React</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
-                <a href="https://dynoz769.github.io/NetflixByAdam/" class="glass project-card reveal" target="_blank" rel="noreferrer">
-                    <div class="project-thumb has-preview">
-                        <img src="https://image.thum.io/get/width/900/crop/675/noanimate/https://dynoz769.github.io/NetflixByAdam/" loading="lazy" alt="NetflixByAdam preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <span class="thumb-fallback">Preview unavailable — open link</span>
-                    </div>
-                    <span class="meta-label">Personal</span>
-                    <h3>NetflixByAdam</h3>
-                    <p class="section-sub">Netflix-style themed web page</p>
-                    <div class="tag-row">
-                        <span class="tag">Html</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                </a>
+        <section class="section">
+            <div class="section-head reveal"><div><h2>How I work</h2><p>A simple path that keeps collaboration smooth and delivery reliable.</p></div></div>
+            <div class="steps">
+                <div class="card reveal"><span class="step-num">01 &middot; Discover</span><h3>Listen &amp; align</h3><p>Clarify the goal, users, constraints, and success metrics.</p></div>
+                <div class="card reveal"><span class="step-num">02 &middot; Design</span><h3>Shape the solution</h3><p>Sketch flows, wireframes, and pick the right stack for speed.</p></div>
+                <div class="card reveal"><span class="step-num">03 &middot; Build</span><h3>Ship in slices</h3><p>Implement iteratively with testing and fast feedback loops.</p></div>
+                <div class="card reveal"><span class="step-num">04 &middot; Validate</span><h3>Measure &amp; improve</h3><p>Collect data, refine UX, and document for easy handoff.</p></div>
             </div>
         </section>
 
-        <section id="workflow" class="section shell" style="padding-top: 24px;">
-            <div class="section-head">
-                <div>
-                    <h2 class="section-title">Workflow</h2>
-                    <p class="section-sub">A simple path that keeps collaboration smooth and delivery reliable.</p>
+        <section class="section" id="experience">
+            <div class="section-head reveal"><div><h2>Experience &amp; awards</h2><p>Leadership, competitions, and hands-on delivery that shaped how I work.</p></div></div>
+            <div class="list">
+                <div class="list-item reveal">
+                    <span class="when">2026 | National</span>
+                    <div><h3>Runner-up - Duta Kecil TVET @ KV Influencer</h3><p>Named national-level runner-up (26 July 2026), representing Kolej Vokasional Pasir Mas as a Diploma in Information Technology student.</p></div>
                 </div>
-            </div>
-            <div class="workflow-steps">
-                <div class="glass workflow-card reveal">
-                    <span class="meta-label">1. Discover</span>
-                    <h4>Listen & align</h4>
-                    <p class="section-sub">Clarify the goal, users, constraints, and success metrics.</p>
+                <div class="list-item reveal">
+                    <span class="when">2026 | National</span>
+                    <div><h3>Runner-up - Duta Kecil TVET (KPM)</h3><p>Runner-up at the Ministry of Education Malaysia&#x27;s Duta Kecil TVET 2026 competition, held at Kompleks Kraf Kuala Lumpur.</p></div>
                 </div>
-                <div class="glass workflow-card reveal">
-                    <span class="meta-label">2. Design</span>
-                    <h4>Shape the solution</h4>
-                    <p class="section-sub">Sketch flows, wireframes, and pick the right stack for speed.</p>
+                <div class="list-item reveal">
+                    <span class="when">2024/2025 | Regional</span>
+                    <div><h3>1st Place - Techlympics Zon Timur</h3><p>Cabaran Siasatan Jenayah category, representing KV Pasir Mas at the Eastern Zone level.</p></div>
                 </div>
-                <div class="glass workflow-card reveal">
-                    <span class="meta-label">3. Build</span>
-                    <h4>Ship in slices</h4>
-                    <p class="section-sub">Implement iteratively with testing and fast feedback loops.</p>
+                <div class="list-item reveal">
+                    <span class="when">2024 | Innovation</span>
+                    <div><h3>E-Pengarang 3M Innovation Team</h3><p>Part of the college&#x27;s innovation team behind the E-Pengarang 3M project.</p></div>
                 </div>
-                <div class="glass workflow-card reveal">
-                    <span class="meta-label">4. Validate</span>
-                    <h4>Measure & improve</h4>
-                    <p class="section-sub">Collect data, refine UX, and document for easy handoff.</p>
+                <div class="list-item reveal">
+                    <span class="when">2025 | Leadership</span>
+                    <div><h3>Yang Dipertua MPP</h3><p>Led the student council (MPP KV Pasir Mas 2025/2026) with a focus on digital initiatives.</p></div>
                 </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section shell" style="padding-top: 24px; padding-bottom: 64px;">
-            <div class="section-head">
-                <div>
-                    <h2 class="section-title">Experience & Awards</h2>
-                    <p class="section-sub">Leadership, competitions, and hands-on delivery that shaped how I work.</p>
+                <div class="list-item reveal">
+                    <span class="when">2024 | Innovation</span>
+                    <div><h3>Gold Award - IIAR24</h3><p>E-Pengarang 3M at KV Batu Pahat, Johor.</p></div>
                 </div>
-            </div>
-            <div class="timeline">
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2026 | National</div>
-                        <h3>Runner-up - Duta Kecil TVET @ KV Influencer</h3>
-                        <p class="section-sub">Named national-level runner-up (26 July 2026), representing Kolej Vokasional Pasir Mas as a Diploma in Information Technology student.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2026 | National</div>
-                        <h3>Runner-up - Duta Kecil TVET (KPM)</h3>
-                        <p class="section-sub">Runner-up at the Ministry of Education Malaysia's Duta Kecil TVET 2026 competition, held at Kompleks Kraf Kuala Lumpur.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024/2025 | Regional</div>
-                        <h3>1st Place - Techlympics Zon Timur</h3>
-                        <p class="section-sub">Cabaran Siasatan Jenayah category, representing KV Pasir Mas at the Eastern Zone level.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | Innovation</div>
-                        <h3>E-Pengarang 3M Innovation Team</h3>
-                        <p class="section-sub">Part of the college's innovation team behind the E-Pengarang 3M project.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2025 | Leadership</div>
-                        <h3>Yang Dipertua MPP</h3>
-                        <p class="section-sub">Led the student council (MPP KV Pasir Mas 2025/2026) with a focus on digital initiatives.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | Innovation</div>
-                        <h3>Gold Award - IIAR24</h3>
-                        <p class="section-sub">E-Pengarang 3M at KV Batu Pahat, Johor.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | Education</div>
-                        <h3>Special Award - IIAR24</h3>
-                        <p class="section-sub">Recognized for education-focused solutions with E-Pengarang 3M.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | Social Science</div>
-                        <h3>Silver Medal - NSIEx</h3>
-                        <p class="section-sub">Social Science (7/2) category, highlighting user research and impact.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | Innovation</div>
-                        <h3>IMAS Award</h3>
-                        <p class="section-sub">UiTM Puncak Perdana recognition for applied technology.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | National</div>
-                        <h3>Techlympic Malaysia</h3>
-                        <p class="section-sub">3rd place, Game Prototype; represented Kelantan at the national level.</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-card">
-                        <div class="timeline-meta">2024 | Leadership</div>
-                        <h3>ICT Executive Committee</h3>
-                        <p class="section-sub">MPP KV Pasir Mas (2024/2025) driving digital literacy efforts.</p>
-                    </div>
-                </article>
-            </div>
-            <div class="cta-bar glass reveal" style="margin-top: 24px;">
-                <div class="cta-copy">
-                    <strong>Have a project in mind?</strong>
-                    <p class="section-sub">Let's talk through the details and see how I can help.</p>
+                <div class="list-item reveal">
+                    <span class="when">2024 | Education</span>
+                    <div><h3>Special Award - IIAR24</h3><p>Recognized for education-focused solutions with E-Pengarang 3M.</p></div>
                 </div>
-                <div class="cta-row" style="margin-bottom: 0;">
-                    <a class="btn solid" href="contact.html">Contact me</a>
-                    <a class="btn outline" href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WhatsApp</a>
+                <div class="list-item reveal">
+                    <span class="when">2024 | Social Science</span>
+                    <div><h3>Silver Medal - NSIEx</h3><p>Social Science (7/2) category, highlighting user research and impact.</p></div>
+                </div>
+                <div class="list-item reveal">
+                    <span class="when">2024 | Innovation</span>
+                    <div><h3>IMAS Award</h3><p>UiTM Puncak Perdana recognition for applied technology.</p></div>
+                </div>
+                <div class="list-item reveal">
+                    <span class="when">2024 | National</span>
+                    <div><h3>Techlympic Malaysia</h3><p>3rd place, Game Prototype; represented Kelantan at the national level.</p></div>
+                </div>
+                <div class="list-item reveal">
+                    <span class="when">2024 | Leadership</span>
+                    <div><h3>ICT Executive Committee</h3><p>MPP KV Pasir Mas (2024/2025) driving digital literacy efforts.</p></div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="shell">
-        <p>(c) 2026 Adam Iman. Built with intent and a lot of coffee.</p>
-        <p style="margin-top:8px;">
-            <a href="index.html">Home</a>
-            <span aria-hidden="true"> &middot; </span>
-            <a href="about.html">About page</a>
-            <span aria-hidden="true"> &middot; </span>
-            <a href="insights.html">Insights page</a>
-            <span aria-hidden="true"> &middot; </span>
-            <a href="contact.html">Contact page</a>
-        </p>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Adam Iman. Built with intent and a lot of coffee.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Dynoz769" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WhatsApp</a>
+                <a href="mailto:Dynoz769@gmail.com">Email</a>
+            </div>
+        </div>
     </footer>
 
 <script src="script.js"></script>
-<script type="module" src="three-scene.js"></script>
 </body>
 </html>
