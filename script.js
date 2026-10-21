@@ -9,8 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const typing = document.querySelector('.typing-effect');
     const themeToggle = document.getElementById('theme-toggle');
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
+    const projectCards = document.querySelectorAll('#projects .project-card');
     const phrases = [
+        'Software Engineering student at UPSI.',
         'IT enthusiast turning ideas into dependable systems.',
         'Developer who ships clean, fast experiences.',
         'Creative technologist blending code and design.'
