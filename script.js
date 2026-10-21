@@ -9,8 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const typing = document.querySelector('.typing-effect');
     const themeToggle = document.getElementById('theme-toggle');
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
+    const projectCards = document.querySelectorAll('#projects .project-card');
     const phrases = [
+        'Software Engineering student at UPSI.',
         'IT enthusiast turning ideas into dependable systems.',
         'Developer who ships clean, fast experiences.',
         'Creative technologist blending code and design.'
@@ -173,6 +174,32 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 3D tilt + light glare on cards (mouse / trackpad only)
+    const canTilt = window.matchMedia('(hover: hover) and (pointer: fine)').matches
+        && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (canTilt) {
+        document.querySelectorAll('.glass').forEach(card => {
+            if (card.querySelector('input, textarea, select')) return;
+            card.classList.add('tilt');
+            card.addEventListener('pointermove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const strength = Math.max(3, 10 - rect.width / 120);
+                card.style.setProperty('--ry', ((x - 0.5) * strength * 2).toFixed(2) + 'deg');
+                card.style.setProperty('--rx', ((0.5 - y) * strength * 2).toFixed(2) + 'deg');
+                card.style.setProperty('--gx', (x * 100).toFixed(1) + '%');
+                card.style.setProperty('--gy', (y * 100).toFixed(1) + '%');
+                card.classList.add('tilting');
+            });
+            card.addEventListener('pointerleave', () => {
+                card.classList.remove('tilting');
+                card.style.setProperty('--rx', '0deg');
+                card.style.setProperty('--ry', '0deg');
+            });
+        });
+    }
 
     window.addEventListener('scroll', () => {
         updateScrollIndicator();
