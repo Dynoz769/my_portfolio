@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Insights | Adam Iman</title>
-<meta name="description" content="Writing and notes from Adam Iman on design, code, and delivery.">
+<meta name="description" content="Insights and milestones from Adam Iman.">
+<meta name="theme-color" content="#09090b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 <!-- Open Graph -->
@@ -15,7 +16,7 @@
 <meta property="og:url" content="https://dynoz.site/insights.html">
 <meta property="og:site_name" content="Adam Iman">
 <meta property="og:title" content="Insights | Adam Iman">
-<meta property="og:description" content="Writing and notes from Adam Iman on design, code, and delivery.">
+<meta property="og:description" content="Insights and milestones from Adam Iman.">
 <meta property="og:image" content="https://dynoz.site/gambar.jpg">
 <meta property="og:image:width" content="810">
 <meta property="og:image:height" content="1080">
@@ -24,93 +25,58 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Insights | Adam Iman">
-<meta name="twitter:description" content="Writing and notes from Adam Iman on design, code, and delivery.">
+<meta name="twitter:description" content="Insights and milestones from Adam Iman.">
 <meta name="twitter:image" content="https://dynoz.site/gambar.jpg">
 
 <!-- Canonical -->
 <link rel="canonical" href="https://dynoz.site/insights.html">
 </head>
 <body>
-    <div class="backdrop"></div>
-    <div class="corner-ticks"><span></span><span></span><span></span><span></span></div>
-    <div class="scroll-indicator"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
 
-    <div class="sidebar-cta">
-        <a href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WA</a>
-        <a href="mailto:Dynoz769@gmail.com" class="secondary">Email</a>
-    </div>
-
-    <header class="nav-shell shell">
-        <a class="brand" href="index.html">Adam Iman</a>
-        <nav>
-            <ul class="nav-menu">
+    <header class="nav container">
+        <div class="nav-inner">
+            <a class="brand" href="index.html"><span class="brand-mark">A</span>Adam Iman</a>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
                 <li><a href="insights.html" class="active">Insights</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-        <div class="controls">
-            <button class="toggle" id="theme-toggle" aria-label="Toggle light or dark mode">Light</button>
-            <a class="btn ghost resume-download" href="Resume.pdf" download>Resume</a>
+            <div class="nav-actions">
+                <a class="btn btn-ghost btn-sm btn-resume resume-download" href="Resume.pdf" download>Resume</a>
+                <a class="btn btn-primary btn-sm" href="contact.html">Let's talk</a>
+                <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span></button>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section id="insights" class="section shell" style="padding-top: 48px;">
-            <div class="section-head">
-                <div>
-                    <p class="eyebrow">Insights</p>
-                    <h1 class="hero-title" style="font-size: clamp(30px, 4vw, 44px);">Writing & notes.</h1>
-                    <p class="section-sub" style="max-width: 640px;">Notes that capture how I approach design, code, and delivery.</p>
-                </div>
-            </div>
-            <div class="insights-grid">
-                <article class="glass insight-card reveal">
-                    <div class="blog-meta">
-                        <span class="tag">Milestone</span>
-                        <span>2026</span>
-                    </div>
-                    <h3>Started Software Engineering at UPSI</h3>
-                    <p class="section-sub">Moved on from the Diploma in IT at Kolej Vokasional Pasir Mas to a Bachelor's in Software Engineering (Kejuruteraan Perisian) at Universiti Pendidikan Sultan Idris.</p>
-                </article>
-                <article class="glass insight-card reveal">
-                    <div class="blog-meta">
-                        <span class="tag">Milestone</span>
-                        <span>Jul 2026</span>
-                    </div>
-                    <h3>Naib Johan, Duta Kecil TVET @ KV Influencer 2026</h3>
-                    <p class="section-sub">Runner-up at the national KV Influencer finals in Kuala Lumpur, representing Kolej Vokasional Pasir Mas and putting IT skills to work in content and digital branding.</p>
-                </article>
-            </div>
-            <div class="cta-bar glass reveal">
-                <div class="cta-copy">
-                    <strong>Need something fast?</strong>
-                    <p class="section-sub">Ping me on WhatsApp or book a quick call to get started.</p>
-                </div>
-                <div class="cta-row" style="margin-bottom: 0;">
-                    <a class="btn solid" href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WhatsApp</a>
-                    <a class="btn outline" href="https://calendly.com/adam-iman/15min" target="_blank" rel="noreferrer">Book a call</a>
-                </div>
-            </div>
+    <main class="container">
+        <section class="page-hero">
+            <span class="eyebrow reveal">Insights</span>
+            <h1 class="display reveal">Writing &amp; notes.</h1>
+            <p class="lead reveal">Milestones and notes on how I approach design, code, and delivery.</p>
+        </section>
+
+        <section class="grid-2">
+                <article class="card post reveal"><div class="post-meta"><span class="tag">Milestone</span><span class="card-label">2026</span></div><h3>Started Software Engineering at UPSI</h3><p>Moved on from the Diploma in IT at Kolej Vokasional Pasir Mas to a Bachelor&#x27;s in Software Engineering (Kejuruteraan Perisian) at Universiti Pendidikan Sultan Idris.</p></article>
+                <article class="card post reveal"><div class="post-meta"><span class="tag">Milestone</span><span class="card-label">Jul 2026</span></div><h3>Naib Johan, Duta Kecil TVET @ KV Influencer 2026</h3><p>Runner-up at the national KV Influencer finals in Kuala Lumpur, representing Kolej Vokasional Pasir Mas and putting IT skills to work in content and digital branding.</p></article>
         </section>
     </main>
 
-    <footer class="shell">
-        <p>(c) 2026 Adam Iman. Built with intent and a lot of coffee.</p>
-        <p style="margin-top:8px;">
-            <a href="index.html">Home</a>
-            <span aria-hidden="true"> &middot; </span>
-            <a href="about.html">About page</a>
-            <span aria-hidden="true"> &middot; </span>
-            <a href="projects.html">Projects page</a>
-            <span aria-hidden="true"> &middot; </span>
-            <a href="contact.html">Contact page</a>
-        </p>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Adam Iman. Built with intent and a lot of coffee.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Dynoz769" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WhatsApp</a>
+                <a href="mailto:Dynoz769@gmail.com">Email</a>
+            </div>
+        </div>
     </footer>
 
 <script src="script.js"></script>
-<script type="module" src="three-scene.js"></script>
 </body>
 </html>
