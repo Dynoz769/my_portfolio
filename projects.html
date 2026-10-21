@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Work | Adam Iman</title>
 <meta name="description" content="Projects by Adam Iman — 50+ live web apps, booking systems, payment gateways and campus tools.">
 <meta name="theme-color" content="#09090b">
+<meta name="color-scheme" content="dark">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,104 +21,137 @@
 <meta property="og:site_name" content="Adam Iman">
 <meta property="og:title" content="Work | Adam Iman">
 <meta property="og:description" content="Projects by Adam Iman — 50+ live web apps, booking systems, payment gateways and campus tools.">
-<meta property="og:image" content="https://dynoz.site/gambar.jpg">
-<meta property="og:image:width" content="810">
-<meta property="og:image:height" content="1080">
+<meta property="og:image" content="https://dynoz.site/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Work | Adam Iman">
 <meta name="twitter:description" content="Projects by Adam Iman — 50+ live web apps, booking systems, payment gateways and campus tools.">
-<meta name="twitter:image" content="https://dynoz.site/gambar.jpg">
+<meta name="twitter:image" content="https://dynoz.site/assets/og.png">
 
 <!-- Canonical -->
 <link rel="canonical" href="https://dynoz.site/projects.html">
 </head>
 <body>
-    <div class="bg-glow" aria-hidden="true"></div>
-    <div class="bg-grid" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="bg" aria-hidden="true">
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="aurora aurora-3"></div>
+        <div class="grid-lines"></div>
+        <div class="noise"></div>
+    </div>
+    <div class="progress" aria-hidden="true"></div>
 
     <header class="nav container">
         <div class="nav-inner">
-            <a class="brand" href="index.html"><span class="brand-mark">A</span>Adam Iman</a>
+            <a class="brand" href="index.html" aria-label="Adam Iman — home"><span class="brand-mark">A</span>Adam Iman</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html" class="active">Work</a></li>
+                <li><a href="projects.html" class="active" aria-current="page">Work</a></li>
+                <li><a href="experience.html">Experience</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="insights.html">Insights</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-actions">
                 <a class="btn btn-ghost btn-sm btn-resume resume-download" href="Resume.pdf" download>Resume</a>
-                <a class="btn btn-primary btn-sm" href="contact.html">Let's talk</a>
-                <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span></button>
+                <a class="btn btn-primary btn-sm" href="contact.html" data-magnetic>Let's talk</a>
+                <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span></button>
             </div>
         </div>
     </header>
 
-    <main class="container">
+    <div class="mobile-menu" id="mobile-menu">
+        <nav aria-label="Mobile">
+            <a href="index.html" style="--i: 0"><small>01</small>Home</a>
+            <a href="projects.html" style="--i: 1" class="active"><small>02</small>Work</a>
+            <a href="experience.html" style="--i: 2"><small>03</small>Experience</a>
+            <a href="about.html" style="--i: 3"><small>04</small>About</a>
+            <a href="insights.html" style="--i: 4"><small>05</small>Insights</a>
+            <a href="contact.html" style="--i: 5"><small>06</small>Contact</a>
+        </nav>
+        <div class="mobile-menu-foot">
+            <a class="btn btn-primary" href="contact.html">Let's talk <span class="ic ic-arrow"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></span></a>
+            <a class="btn btn-ghost resume-download" href="Resume.pdf" download>Resume</a>
+            <a class="btn btn-ghost" href="https://github.com/Dynoz769" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+    </div>
+
+    <main class="container" id="main" tabindex="-1">
         <section class="page-hero">
             <span class="eyebrow reveal">Work</span>
-            <h1 class="display reveal">Things I've built.</h1>
-            <p class="lead reveal">53 live projects &mdash; from payment gateways and booking systems to campus tools. Every card opens the live site.</p>
+            <h1 class="display" data-split>Things I've built.</h1>
+            <p class="lead reveal">53 live projects — from payment gateways and booking systems to campus tools. Every card opens the live site.</p>
         </section>
 
         <section class="section" style="padding-top: 8px;">
-            <div class="section-head reveal"><div><h2>Featured</h2><p>Three projects I'm most proud of.</p></div></div>
-            <div class="featured-list">
-                <article class="card featured-project reveal">
-                    <div class="shot"><span class="shot-fallback">B</span><img src="assets/shots/dynoz769-github-io-bayarterus.webp" loading="lazy" alt="BayarTerus preview"></div>
+            <div class="section-head">
+                <div><h2 data-split>Featured</h2><p class="reveal">Three projects I'm most proud of.</p></div>
+                
+            </div>
+            <div class="stack">
+                <article class="card stack-card" style="--i: 0">
+                    <div class="shot"><span class="shot-fallback">B</span><img src="assets/shots/dynoz769-github-io-bayarterus-800.webp" srcset="assets/shots/dynoz769-github-io-bayarterus-800.webp 800w, assets/shots/dynoz769-github-io-bayarterus-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 640px" width="1600" height="1000" loading="lazy" decoding="async" alt="BayarTerus website preview"></div>
                     <div class="project-body">
-                        <span class="card-label">Payment gateway</span>
+                        <span class="num">01 / 03 · Payment gateway</span>
                         <h3>BayarTerus</h3>
                         <p>Payment gateway web app for collecting online payments quickly and reliably.</p>
                         <div class="tags"><span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">Payments</span></div>
                         <div class="links">
-                            <a class="btn btn-primary btn-sm" href="https://dynoz769.github.io/BayarTerus/" target="_blank" rel="noreferrer">Visit site <span class="arrow">&rarr;</span></a>
-                            <a class="btn btn-ghost btn-sm" href="https://github.com/Dynoz769/BayarTerus" target="_blank" rel="noreferrer">GitHub</a>
+                            <a class="btn btn-primary btn-sm" href="https://dynoz769.github.io/BayarTerus/" target="_blank" rel="noreferrer" data-magnetic>Visit site <span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></a>
+                            <a class="btn btn-ghost btn-sm" href="https://github.com/Dynoz769/BayarTerus" target="_blank" rel="noreferrer" data-magnetic><span class="ic"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" /><path d="M9 18c-4.51 2-5-2-7-2" /></svg></span> GitHub</a>
                         </div>
                     </div>
+                    <span class="stack-dim"></span>
                 </article>
-                <article class="card featured-project reveal">
-                    <div class="shot"><span class="shot-fallback">PH</span><img src="assets/shots/dynoz769-github-io-human-resource-management-system.webp" loading="lazy" alt="PeopleHub HRMS preview"></div>
+                <article class="card stack-card" style="--i: 1">
+                    <div class="shot"><span class="shot-fallback">PH</span><img src="assets/shots/dynoz769-github-io-human-resource-management-system-800.webp" srcset="assets/shots/dynoz769-github-io-human-resource-management-system-800.webp 800w, assets/shots/dynoz769-github-io-human-resource-management-system-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 640px" width="1600" height="1000" loading="lazy" decoding="async" alt="PeopleHub HRMS website preview"></div>
                     <div class="project-body">
-                        <span class="card-label">System</span>
+                        <span class="num">02 / 03 · System · HR</span>
                         <h3>PeopleHub HRMS</h3>
                         <p>Human resource management system for handling staff, records, and company operations.</p>
                         <div class="tags"><span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">Render</span></div>
                         <div class="links">
-                            <a class="btn btn-primary btn-sm" href="https://dynoz769.github.io/Human-Resource-Management-System/" target="_blank" rel="noreferrer">Visit site <span class="arrow">&rarr;</span></a>
-                            <a class="btn btn-ghost btn-sm" href="https://github.com/Dynoz769/Human-Resource-Management-System" target="_blank" rel="noreferrer">GitHub</a>
+                            <a class="btn btn-primary btn-sm" href="https://dynoz769.github.io/Human-Resource-Management-System/" target="_blank" rel="noreferrer" data-magnetic>Visit site <span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></a>
+                            <a class="btn btn-ghost btn-sm" href="https://github.com/Dynoz769/Human-Resource-Management-System" target="_blank" rel="noreferrer" data-magnetic><span class="ic"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" /><path d="M9 18c-4.51 2-5-2-7-2" /></svg></span> GitHub</a>
                         </div>
                     </div>
+                    <span class="stack-dim"></span>
                 </article>
-                <article class="card featured-project reveal">
-                    <div class="shot"><span class="shot-fallback">HK</span><img src="assets/shots/dynoz769-github-io-homestaykawee.webp" loading="lazy" alt="Homestay Kawe preview"></div>
+                <article class="card stack-card" style="--i: 2">
+                    <div class="shot"><span class="shot-fallback">HK</span><img src="assets/shots/dynoz769-github-io-homestaykawee-800.webp" srcset="assets/shots/dynoz769-github-io-homestaykawee-800.webp 800w, assets/shots/dynoz769-github-io-homestaykawee-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 640px" width="1600" height="1000" loading="lazy" decoding="async" alt="Homestay Kawe website preview"></div>
                     <div class="project-body">
-                        <span class="card-label">Client · Booking</span>
+                        <span class="num">03 / 03 · Client · Booking</span>
                         <h3>Homestay Kawe</h3>
                         <p>Room booking site with an integrated Bcl.my payment gateway for a real homestay business.</p>
                         <div class="tags"><span class="tag">HTML</span><span class="tag">Node.js</span><span class="tag">Bcl.my</span></div>
                         <div class="links">
-                            <a class="btn btn-primary btn-sm" href="https://dynoz769.github.io/HomeStayKawee/" target="_blank" rel="noreferrer">Visit site <span class="arrow">&rarr;</span></a>
-                            <a class="btn btn-ghost btn-sm" href="https://github.com/Dynoz769/HomeStayKawee" target="_blank" rel="noreferrer">GitHub</a>
+                            <a class="btn btn-primary btn-sm" href="https://dynoz769.github.io/HomeStayKawee/" target="_blank" rel="noreferrer" data-magnetic>Visit site <span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></a>
+                            <a class="btn btn-ghost btn-sm" href="https://github.com/Dynoz769/HomeStayKawee" target="_blank" rel="noreferrer" data-magnetic><span class="ic"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" /><path d="M9 18c-4.51 2-5-2-7-2" /></svg></span> GitHub</a>
                         </div>
                     </div>
+                    <span class="stack-dim"></span>
                 </article>
             </div>
         </section>
 
         <section class="section" id="all-projects">
-            <div class="section-head reveal"><div><h2>All projects</h2><p>Filter by type or search by name.</p></div></div>
+            <div class="section-head">
+                <div><h2 data-split>All projects</h2><p class="reveal">Filter by type or search by name.</p></div>
+                
+            </div>
             <div class="toolbar reveal">
                 <div class="chips"><button class="chip active" data-filter="all">All<span class="count">53</span></button><button class="chip" data-filter="client">Client work<span class="count">22</span></button><button class="chip" data-filter="product">Products &amp; tools<span class="count">14</span></button><button class="chip" data-filter="campus">Campus<span class="count">12</span></button><button class="chip" data-filter="personal">Personal<span class="count">5</span></button></div>
-                <label class="search"><span aria-hidden="true">&#9906;</span><input id="project-search" type="search" placeholder="Search projects…" aria-label="Search projects"></label>
+                <label class="search"><span class="ic"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg></span><input id="project-search" type="search" placeholder="Search projects…" aria-label="Search projects"></label>
             </div>
-            <div class="grid-3" id="project-grid">
-                <a class="card project" data-cat="client" href="https://dynoz.bcl.my/booking/resort-chalet" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">BW</span><img src="assets/shots/dynoz-bcl-my-booking-resort-chalet.webp" loading="lazy" alt="Booking Web preview"></div>
+            <div class="grid-3" id="project-grid" data-stagger="3">
+                <a class="card project reveal" data-cat="client" href="https://dynoz.bcl.my/booking/resort-chalet" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">BW</span><img src="assets/shots/dynoz-bcl-my-booking-resort-chalet-800.webp" srcset="assets/shots/dynoz-bcl-my-booking-resort-chalet-800.webp 800w, assets/shots/dynoz-bcl-my-booking-resort-chalet-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Booking Web website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Homestay Kawe</span>
                         <h3>Booking Web</h3>
@@ -122,9 +159,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">Node.js</span><span class="tag">Bcl.my</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/moneymanagement/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">MM</span><img src="assets/shots/dynoz769-github-io-moneymanagement.webp" loading="lazy" alt="Money Management preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/moneymanagement/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">MM</span><img src="assets/shots/dynoz769-github-io-moneymanagement-800.webp" srcset="assets/shots/dynoz769-github-io-moneymanagement-800.webp 800w, assets/shots/dynoz769-github-io-moneymanagement-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Money Management website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Personal Project</span>
                         <h3>Money Management</h3>
@@ -132,9 +169,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/revamp-wiradigital/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">RW</span><img src="assets/shots/dynoz769-github-io-revamp-wiradigital.webp" loading="lazy" alt="Revamp Wiradigital preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/revamp-wiradigital/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">RW</span><img src="assets/shots/dynoz769-github-io-revamp-wiradigital-800.webp" srcset="assets/shots/dynoz769-github-io-revamp-wiradigital-800.webp 800w, assets/shots/dynoz769-github-io-revamp-wiradigital-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Revamp Wiradigital website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Client Project</span>
                         <h3>Revamp Wiradigital</h3>
@@ -142,9 +179,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/DOA-FOR-PURPOSE/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">DF</span><img src="assets/shots/dynoz769-github-io-doa-for-purpose.webp" loading="lazy" alt="Doa For Purpose preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/DOA-FOR-PURPOSE/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">DF</span><img src="assets/shots/dynoz769-github-io-doa-for-purpose-800.webp" srcset="assets/shots/dynoz769-github-io-doa-for-purpose-800.webp 800w, assets/shots/dynoz769-github-io-doa-for-purpose-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Doa For Purpose website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Personal Project</span>
                         <h3>Doa For Purpose</h3>
@@ -152,9 +189,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/COLLAGE-PARKING/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">CP</span><img src="assets/shots/dynoz769-github-io-collage-parking.webp" loading="lazy" alt="College Parking preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/COLLAGE-PARKING/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">CP</span><img src="assets/shots/dynoz769-github-io-collage-parking-800.webp" srcset="assets/shots/dynoz769-github-io-collage-parking-800.webp 800w, assets/shots/dynoz769-github-io-collage-parking-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="College Parking website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Academic Project</span>
                         <h3>College Parking</h3>
@@ -162,9 +199,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://d7.bcl.my/form/merdeka-running-2026" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">MS</span><img src="assets/shots/d7-bcl-my-form-merdeka-running-2026.webp" loading="lazy" alt="Merch Store preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://d7.bcl.my/form/merdeka-running-2026" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">MS</span><img src="assets/shots/d7-bcl-my-form-merdeka-running-2026-800.webp" srcset="assets/shots/d7-bcl-my-form-merdeka-running-2026-800.webp 800w, assets/shots/d7-bcl-my-form-merdeka-running-2026-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Merch Store website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Merdeka Run 2026</span>
                         <h3>Merch Store</h3>
@@ -172,9 +209,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">Css</span><span class="tag">Bcl.my</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/Human-Resource-Management-System/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">HR</span><img src="assets/shots/dynoz769-github-io-human-resource-management-system.webp" loading="lazy" alt="Human Resource System preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/Human-Resource-Management-System/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">HR</span><img src="assets/shots/dynoz769-github-io-human-resource-management-system-800.webp" srcset="assets/shots/dynoz769-github-io-human-resource-management-system-800.webp 800w, assets/shots/dynoz769-github-io-human-resource-management-system-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Human Resource System website preview"></div>
                     <div class="project-body">
                         <span class="card-label">PeopleHub HRMS</span>
                         <h3>Human Resource System</h3>
@@ -182,9 +219,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">Css</span><span class="tag">Render</span><span class="tag">Tailwind</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz.bcl.my/form/dynodonate" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">D</span><img src="assets/shots/dynoz-bcl-my-form-dynodonate.webp" loading="lazy" alt="DynoDonate preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz.bcl.my/form/dynodonate" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">D</span><img src="assets/shots/dynoz-bcl-my-form-dynodonate-800.webp" srcset="assets/shots/dynoz-bcl-my-form-dynodonate-800.webp 800w, assets/shots/dynoz-bcl-my-form-dynodonate-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="DynoDonate website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Donation Form</span>
                         <h3>DynoDonate</h3>
@@ -192,9 +229,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">Css</span><span class="tag">Bcl.my</span><span class="tag">Tailwind</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/BayarTerus/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">B</span><img src="assets/shots/dynoz769-github-io-bayarterus.webp" loading="lazy" alt="BayarTerus preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/BayarTerus/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">B</span><img src="assets/shots/dynoz769-github-io-bayarterus-800.webp" srcset="assets/shots/dynoz769-github-io-bayarterus-800.webp 800w, assets/shots/dynoz769-github-io-bayarterus-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="BayarTerus website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Payment Gateway</span>
                         <h3>BayarTerus</h3>
@@ -202,9 +239,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/UPSIHub/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">U</span><img src="assets/shots/dynoz769-github-io-upsihub.webp" loading="lazy" alt="UPSIHub preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/UPSIHub/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">U</span><img src="assets/shots/dynoz769-github-io-upsihub-800.webp" srcset="assets/shots/dynoz769-github-io-upsihub-800.webp 800w, assets/shots/dynoz769-github-io-upsihub-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="UPSIHub website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Student Platform</span>
                         <h3>UPSIHub</h3>
@@ -212,9 +249,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/UPSI-DATA/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">UD</span><img src="assets/shots/dynoz769-github-io-upsi-data.webp" loading="lazy" alt="UPSI Data preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/UPSI-DATA/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">UD</span><img src="assets/shots/dynoz769-github-io-upsi-data-800.webp" srcset="assets/shots/dynoz769-github-io-upsi-data-800.webp 800w, assets/shots/dynoz769-github-io-upsi-data-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="UPSI Data website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Data Portal</span>
                         <h3>UPSI Data</h3>
@@ -222,9 +259,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/BLOOD-DIAMOND-RING-BUSINESS/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">BD</span><img src="assets/shots/dynoz769-github-io-blood-diamond-ring-business.webp" loading="lazy" alt="Blood Diamond Ring Business preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/BLOOD-DIAMOND-RING-BUSINESS/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">BD</span><img src="assets/shots/dynoz769-github-io-blood-diamond-ring-business-800.webp" srcset="assets/shots/dynoz769-github-io-blood-diamond-ring-business-800.webp 800w, assets/shots/dynoz769-github-io-blood-diamond-ring-business-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Blood Diamond Ring Business website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Business Site</span>
                         <h3>Blood Diamond Ring Business</h3>
@@ -232,9 +269,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/RIDEWITHME2.0/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">MC</span><img src="assets/shots/dynoz769-github-io-ridewithme2-0.webp" loading="lazy" alt="Merch &amp; Cabutan preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/RIDEWITHME2.0/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">MC</span><img src="assets/shots/dynoz769-github-io-ridewithme2-0-800.webp" srcset="assets/shots/dynoz769-github-io-ridewithme2-0-800.webp 800w, assets/shots/dynoz769-github-io-ridewithme2-0-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Merch &amp; Cabutan website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Ride With Me 2.0</span>
                         <h3>Merch &amp; Cabutan</h3>
@@ -242,9 +279,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/rwm/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">RM</span><img src="assets/shots/dynoz769-github-io-rwm.webp" loading="lazy" alt="RWM Merch (Mirror) preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/rwm/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">RM</span><img src="assets/shots/dynoz769-github-io-rwm-800.webp" srcset="assets/shots/dynoz769-github-io-rwm-800.webp 800w, assets/shots/dynoz769-github-io-rwm-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="RWM Merch (Mirror) website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Ride With Me 2.0</span>
                         <h3>RWM Merch (Mirror)</h3>
@@ -252,9 +289,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/merdeka-run/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">LU</span><img src="assets/shots/dynoz769-github-io-merdeka-run.webp" loading="lazy" alt="Larilah Untuk Negara preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/merdeka-run/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">LU</span><img src="assets/shots/dynoz769-github-io-merdeka-run-800.webp" srcset="assets/shots/dynoz769-github-io-merdeka-run-800.webp 800w, assets/shots/dynoz769-github-io-merdeka-run-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Larilah Untuk Negara website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Merdeka Run 2026</span>
                         <h3>Larilah Untuk Negara</h3>
@@ -262,9 +299,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/TelekungMaryam/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">TM</span><img src="assets/shots/dynoz769-github-io-telekungmaryam.webp" loading="lazy" alt="Telekung Maryam Store preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/TelekungMaryam/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">TM</span><img src="assets/shots/dynoz769-github-io-telekungmaryam-800.webp" srcset="assets/shots/dynoz769-github-io-telekungmaryam-800.webp 800w, assets/shots/dynoz769-github-io-telekungmaryam-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Telekung Maryam Store website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Telekung Maryam</span>
                         <h3>Telekung Maryam Store</h3>
@@ -272,9 +309,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/TM-LANDINGPAGE/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">PC</span><img src="assets/shots/dynoz769-github-io-tm-landingpage.webp" loading="lazy" alt="Premium Collection Landing preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/TM-LANDINGPAGE/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">PC</span><img src="assets/shots/dynoz769-github-io-tm-landingpage-800.webp" srcset="assets/shots/dynoz769-github-io-tm-landingpage-800.webp 800w, assets/shots/dynoz769-github-io-tm-landingpage-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Premium Collection Landing website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Telekung Maryam</span>
                         <h3>Premium Collection Landing</h3>
@@ -282,9 +319,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/TM-Business-Card/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">DB</span><img src="assets/shots/dynoz769-github-io-tm-business-card.webp" loading="lazy" alt="Digital Business Card preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/TM-Business-Card/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">DB</span><img src="assets/shots/dynoz769-github-io-tm-business-card-800.webp" srcset="assets/shots/dynoz769-github-io-tm-business-card-800.webp 800w, assets/shots/dynoz769-github-io-tm-business-card-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Digital Business Card website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Telekung Maryam</span>
                         <h3>Digital Business Card</h3>
@@ -292,9 +329,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/car-eligibility-calculator-atikah-suki/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">CE</span><img src="assets/shots/dynoz769-github-io-car-eligibility-calculator-atikah-suki.webp" loading="lazy" alt="Car Eligibility Calculator preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/car-eligibility-calculator-atikah-suki/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">CE</span><img src="assets/shots/dynoz769-github-io-car-eligibility-calculator-atikah-suki-800.webp" srcset="assets/shots/dynoz769-github-io-car-eligibility-calculator-atikah-suki-800.webp 800w, assets/shots/dynoz769-github-io-car-eligibility-calculator-atikah-suki-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Car Eligibility Calculator website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Proton Jawira</span>
                         <h3>Car Eligibility Calculator</h3>
@@ -302,9 +339,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/TAUFIK-RIMAU-PUTIH/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">SK</span><img src="assets/shots/dynoz769-github-io-taufik-rimau-putih.webp" loading="lazy" alt="Survey Kereta Proton preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/TAUFIK-RIMAU-PUTIH/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">SK</span><img src="assets/shots/dynoz769-github-io-taufik-rimau-putih-800.webp" srcset="assets/shots/dynoz769-github-io-taufik-rimau-putih-800.webp 800w, assets/shots/dynoz769-github-io-taufik-rimau-putih-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Survey Kereta Proton website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Proton Sales</span>
                         <h3>Survey Kereta Proton</h3>
@@ -312,9 +349,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/Hokai-Calculator/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">SG</span><img src="assets/shots/dynoz769-github-io-hokai-calculator.webp" loading="lazy" alt="Salary &amp; Gold Tracker preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/Hokai-Calculator/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">SG</span><img src="assets/shots/dynoz769-github-io-hokai-calculator-800.webp" srcset="assets/shots/dynoz769-github-io-hokai-calculator-800.webp 800w, assets/shots/dynoz769-github-io-hokai-calculator-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Salary &amp; Gold Tracker website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Hokai Family</span>
                         <h3>Salary &amp; Gold Tracker</h3>
@@ -322,9 +359,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/WEEKLY-TASK-HOKAI/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">LG</span><img src="assets/shots/dynoz769-github-io-weekly-task-hokai.webp" loading="lazy" alt="Leave &amp; Gold Calendar preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/WEEKLY-TASK-HOKAI/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">LG</span><img src="assets/shots/dynoz769-github-io-weekly-task-hokai-800.webp" srcset="assets/shots/dynoz769-github-io-weekly-task-hokai-800.webp 800w, assets/shots/dynoz769-github-io-weekly-task-hokai-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Leave &amp; Gold Calendar website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Hokai Family</span>
                         <h3>Leave &amp; Gold Calendar</h3>
@@ -332,9 +369,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/NIGHTCLUB-JOB-TUTORIAL/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">NT</span><img src="assets/shots/dynoz769-github-io-nightclub-job-tutorial.webp" loading="lazy" alt="Nightclub Training preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/NIGHTCLUB-JOB-TUTORIAL/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">NT</span><img src="assets/shots/dynoz769-github-io-nightclub-job-tutorial-800.webp" srcset="assets/shots/dynoz769-github-io-nightclub-job-tutorial-800.webp 800w, assets/shots/dynoz769-github-io-nightclub-job-tutorial-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Nightclub Training website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Staff HQ</span>
                         <h3>Nightclub Training</h3>
@@ -342,9 +379,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/HomeStayKawee/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">HB</span><img src="assets/shots/dynoz769-github-io-homestaykawee.webp" loading="lazy" alt="Homestay Booking preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/HomeStayKawee/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">HB</span><img src="assets/shots/dynoz769-github-io-homestaykawee-800.webp" srcset="assets/shots/dynoz769-github-io-homestaykawee-800.webp 800w, assets/shots/dynoz769-github-io-homestaykawee-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Homestay Booking website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Homestay Kawe</span>
                         <h3>Homestay Booking</h3>
@@ -352,9 +389,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/Kyuu_Store/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">KS</span><img src="assets/shots/dynoz769-github-io-kyuu-store.webp" loading="lazy" alt="KYUU Store preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/Kyuu_Store/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">KS</span><img src="assets/shots/dynoz769-github-io-kyuu-store-800.webp" srcset="assets/shots/dynoz769-github-io-kyuu-store-800.webp 800w, assets/shots/dynoz769-github-io-kyuu-store-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="KYUU Store website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Online Store</span>
                         <h3>KYUU Store</h3>
@@ -362,9 +399,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/BRISWALKREGISTER/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">PB</span><img src="assets/shots/dynoz769-github-io-briswalkregister.webp" loading="lazy" alt="Pendaftaran Briswalk preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/BRISWALKREGISTER/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">PB</span><img src="assets/shots/dynoz769-github-io-briswalkregister-800.webp" srcset="assets/shots/dynoz769-github-io-briswalkregister-800.webp 800w, assets/shots/dynoz769-github-io-briswalkregister-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Pendaftaran Briswalk website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Event Registration</span>
                         <h3>Pendaftaran Briswalk</h3>
@@ -372,9 +409,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/COUNTDOWN-INTERN/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">PC</span><img src="assets/shots/dynoz769-github-io-countdown-intern.webp" loading="lazy" alt="Pro Countdown App preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/COUNTDOWN-INTERN/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">PC</span><img src="assets/shots/dynoz769-github-io-countdown-intern-800.webp" srcset="assets/shots/dynoz769-github-io-countdown-intern-800.webp 800w, assets/shots/dynoz769-github-io-countdown-intern-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Pro Countdown App website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Utility</span>
                         <h3>Pro Countdown App</h3>
@@ -382,9 +419,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/COUNTDOWN-OJT/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">OC</span><img src="assets/shots/dynoz769-github-io-countdown-ojt.webp" loading="lazy" alt="OJT Countdown Timer preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/COUNTDOWN-OJT/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">OC</span><img src="assets/shots/dynoz769-github-io-countdown-ojt-800.webp" srcset="assets/shots/dynoz769-github-io-countdown-ojt-800.webp 800w, assets/shots/dynoz769-github-io-countdown-ojt-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="OJT Countdown Timer website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Utility</span>
                         <h3>OJT Countdown Timer</h3>
@@ -392,9 +429,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/PayPlus/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">P</span><img src="assets/shots/dynoz769-github-io-payplus.webp" loading="lazy" alt="PayPlus preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/PayPlus/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">P</span><img src="assets/shots/dynoz769-github-io-payplus-800.webp" srcset="assets/shots/dynoz769-github-io-payplus-800.webp 800w, assets/shots/dynoz769-github-io-payplus-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="PayPlus website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Payments</span>
                         <h3>PayPlus</h3>
@@ -402,9 +439,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">JavaScript</span><span class="tag">Stripe</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/agrement-generator/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">AG</span><img src="assets/shots/dynoz769-github-io-agrement-generator.webp" loading="lazy" alt="Agreement Generator preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/agrement-generator/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">AG</span><img src="assets/shots/dynoz769-github-io-agrement-generator-800.webp" srcset="assets/shots/dynoz769-github-io-agrement-generator-800.webp 800w, assets/shots/dynoz769-github-io-agrement-generator-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Agreement Generator website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Utility</span>
                         <h3>Agreement Generator</h3>
@@ -412,9 +449,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/ADUAN-DEWAN-MAKAN-KVPM/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">AD</span><img src="assets/shots/dynoz769-github-io-aduan-dewan-makan-kvpm.webp" loading="lazy" alt="Aduan Dewan Makan preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/ADUAN-DEWAN-MAKAN-KVPM/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">AD</span><img src="assets/shots/dynoz769-github-io-aduan-dewan-makan-kvpm-800.webp" srcset="assets/shots/dynoz769-github-io-aduan-dewan-makan-kvpm-800.webp 800w, assets/shots/dynoz769-github-io-aduan-dewan-makan-kvpm-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Aduan Dewan Makan website preview"></div>
                     <div class="project-body">
                         <span class="card-label">KV Pasir Mas</span>
                         <h3>Aduan Dewan Makan</h3>
@@ -422,9 +459,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/System-Aduan-Kolej/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">SA</span><img src="assets/shots/dynoz769-github-io-system-aduan-kolej.webp" loading="lazy" alt="Sistem Aduan Pelajar preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/System-Aduan-Kolej/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">SA</span><img src="assets/shots/dynoz769-github-io-system-aduan-kolej-800.webp" srcset="assets/shots/dynoz769-github-io-system-aduan-kolej-800.webp 800w, assets/shots/dynoz769-github-io-system-aduan-kolej-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Sistem Aduan Pelajar website preview"></div>
                     <div class="project-body">
                         <span class="card-label">KV Pasir Mas</span>
                         <h3>Sistem Aduan Pelajar</h3>
@@ -432,9 +469,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/LIST-AJK-KEM-OJT-2026/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">AK</span><img src="assets/shots/dynoz769-github-io-list-ajk-kem-ojt-2026.webp" loading="lazy" alt="AJK Kem OJT 2026 preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/LIST-AJK-KEM-OJT-2026/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">AK</span><img src="assets/shots/dynoz769-github-io-list-ajk-kem-ojt-2026-800.webp" srcset="assets/shots/dynoz769-github-io-list-ajk-kem-ojt-2026-800.webp 800w, assets/shots/dynoz769-github-io-list-ajk-kem-ojt-2026-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="AJK Kem OJT 2026 website preview"></div>
                     <div class="project-body">
                         <span class="card-label">KV Pasir Mas</span>
                         <h3>AJK Kem OJT 2026</h3>
@@ -442,9 +479,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/MPP-KVPM/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">MK</span><img src="assets/shots/dynoz769-github-io-mpp-kvpm.webp" loading="lazy" alt="MPP KVPM preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/MPP-KVPM/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">MK</span><img src="assets/shots/dynoz769-github-io-mpp-kvpm-800.webp" srcset="assets/shots/dynoz769-github-io-mpp-kvpm-800.webp 800w, assets/shots/dynoz769-github-io-mpp-kvpm-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="MPP KVPM website preview"></div>
                     <div class="project-body">
                         <span class="card-label">KV Pasir Mas</span>
                         <h3>MPP KVPM</h3>
@@ -452,9 +489,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/Clients-Session-Data/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">CS</span><img src="assets/shots/dynoz769-github-io-clients-session-data.webp" loading="lazy" alt="Clients Session Data preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/Clients-Session-Data/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">CS</span><img src="assets/shots/dynoz769-github-io-clients-session-data-800.webp" srcset="assets/shots/dynoz769-github-io-clients-session-data-800.webp 800w, assets/shots/dynoz769-github-io-clients-session-data-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Clients Session Data website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Client Tool</span>
                         <h3>Clients Session Data</h3>
@@ -462,9 +499,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/weqwsad/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">KM</span><img src="assets/shots/dynoz769-github-io-weqwsad.webp" loading="lazy" alt="KVPM Mall preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/weqwsad/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">KM</span><img src="assets/shots/dynoz769-github-io-weqwsad-800.webp" srcset="assets/shots/dynoz769-github-io-weqwsad-800.webp 800w, assets/shots/dynoz769-github-io-weqwsad-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="KVPM Mall website preview"></div>
                     <div class="project-body">
                         <span class="card-label">KVPM Mall</span>
                         <h3>KVPM Mall</h3>
@@ -472,9 +509,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/kl/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">KM</span><img src="assets/shots/dynoz769-github-io-kl.webp" loading="lazy" alt="KVPM Mall v2 preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/kl/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">KM</span><img src="assets/shots/dynoz769-github-io-kl-800.webp" srcset="assets/shots/dynoz769-github-io-kl-800.webp 800w, assets/shots/dynoz769-github-io-kl-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="KVPM Mall v2 website preview"></div>
                     <div class="project-body">
                         <span class="card-label">KVPM Mall</span>
                         <h3>KVPM Mall v2</h3>
@@ -482,9 +519,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/ADMIN-GARAJ/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">GA</span><img src="assets/shots/dynoz769-github-io-admin-garaj.webp" loading="lazy" alt="Garage Admin preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/ADMIN-GARAJ/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">GA</span><img src="assets/shots/dynoz769-github-io-admin-garaj-800.webp" srcset="assets/shots/dynoz769-github-io-admin-garaj-800.webp 800w, assets/shots/dynoz769-github-io-admin-garaj-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Garage Admin website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Sistem Garaj</span>
                         <h3>Garage Admin</h3>
@@ -492,9 +529,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/GARAGE-1/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">GS</span><img src="assets/shots/dynoz769-github-io-garage-1.webp" loading="lazy" alt="Garage System preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/GARAGE-1/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">GS</span><img src="assets/shots/dynoz769-github-io-garage-1-800.webp" srcset="assets/shots/dynoz769-github-io-garage-1-800.webp 800w, assets/shots/dynoz769-github-io-garage-1-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Garage System website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Sistem Garaj</span>
                         <h3>Garage System</h3>
@@ -502,9 +539,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="product" href="https://dynoz769.github.io/taekwondo/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">TS</span><img src="assets/shots/dynoz769-github-io-taekwondo.webp" loading="lazy" alt="Taekwondo System preview"></div>
+                <a class="card project reveal" data-cat="product" href="https://dynoz769.github.io/taekwondo/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">TS</span><img src="assets/shots/dynoz769-github-io-taekwondo-800.webp" srcset="assets/shots/dynoz769-github-io-taekwondo-800.webp 800w, assets/shots/dynoz769-github-io-taekwondo-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Taekwondo System website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Club System</span>
                         <h3>Taekwondo System</h3>
@@ -512,9 +549,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/Kehadiran-Pelajar/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">KH</span><img src="assets/shots/dynoz769-github-io-kehadiran-pelajar.webp" loading="lazy" alt="Kehadiran &amp; Hasil Kerja preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/Kehadiran-Pelajar/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">KH</span><img src="assets/shots/dynoz769-github-io-kehadiran-pelajar-800.webp" srcset="assets/shots/dynoz769-github-io-kehadiran-pelajar-800.webp 800w, assets/shots/dynoz769-github-io-kehadiran-pelajar-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Kehadiran &amp; Hasil Kerja website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Academic Tool</span>
                         <h3>Kehadiran &amp; Hasil Kerja</h3>
@@ -522,9 +559,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/System-KV2/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">SS</span><img src="assets/shots/dynoz769-github-io-system-kv2.webp" loading="lazy" alt="School System preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/System-KV2/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">SS</span><img src="assets/shots/dynoz769-github-io-system-kv2-800.webp" srcset="assets/shots/dynoz769-github-io-system-kv2-800.webp 800w, assets/shots/dynoz769-github-io-system-kv2-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="School System website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Academic Tool</span>
                         <h3>School System</h3>
@@ -532,9 +569,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/DEBATSESI2/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">PK</span><img src="assets/shots/dynoz769-github-io-debatsesi2.webp" loading="lazy" alt="Portal Kelas Perbahasan preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/DEBATSESI2/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">PK</span><img src="assets/shots/dynoz769-github-io-debatsesi2-800.webp" srcset="assets/shots/dynoz769-github-io-debatsesi2-800.webp 800w, assets/shots/dynoz769-github-io-debatsesi2-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Portal Kelas Perbahasan website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Academic Tool</span>
                         <h3>Portal Kelas Perbahasan</h3>
@@ -542,9 +579,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/MPU2422/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">M2</span><img src="assets/shots/dynoz769-github-io-mpu2422.webp" loading="lazy" alt="MPU 2422 preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/MPU2422/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">M2</span><img src="assets/shots/dynoz769-github-io-mpu2422-800.webp" srcset="assets/shots/dynoz769-github-io-mpu2422-800.webp 800w, assets/shots/dynoz769-github-io-mpu2422-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="MPU 2422 website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Academic Project</span>
                         <h3>MPU 2422</h3>
@@ -552,9 +589,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="campus" href="https://dynoz769.github.io/LAWATAN/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">L</span><img src="assets/shots/dynoz769-github-io-lawatan.webp" loading="lazy" alt="Lawatan preview"></div>
+                <a class="card project reveal" data-cat="campus" href="https://dynoz769.github.io/LAWATAN/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">L</span><img src="assets/shots/dynoz769-github-io-lawatan-800.webp" srcset="assets/shots/dynoz769-github-io-lawatan-800.webp 800w, assets/shots/dynoz769-github-io-lawatan-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Lawatan website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Academic Project</span>
                         <h3>Lawatan</h3>
@@ -562,9 +599,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/MZH-TRAVEL/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">MT</span><img src="assets/shots/dynoz769-github-io-mzh-travel.webp" loading="lazy" alt="MZH Travel preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/MZH-TRAVEL/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">MT</span><img src="assets/shots/dynoz769-github-io-mzh-travel-800.webp" srcset="assets/shots/dynoz769-github-io-mzh-travel-800.webp 800w, assets/shots/dynoz769-github-io-mzh-travel-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="MZH Travel website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Travel Agency</span>
                         <h3>MZH Travel</h3>
@@ -572,9 +609,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/LupyPortfolio/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">MZ</span><img src="assets/shots/dynoz769-github-io-lupyportfolio.webp" loading="lazy" alt="Muhammad Zulfi Hakim preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/LupyPortfolio/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">MZ</span><img src="assets/shots/dynoz769-github-io-lupyportfolio-800.webp" srcset="assets/shots/dynoz769-github-io-lupyportfolio-800.webp 800w, assets/shots/dynoz769-github-io-lupyportfolio-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Muhammad Zulfi Hakim website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Client Portfolio</span>
                         <h3>Muhammad Zulfi Hakim</h3>
@@ -582,9 +619,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="client" href="https://dynoz769.github.io/MIRULPORTFOLIO/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">AH</span><img src="assets/shots/dynoz769-github-io-mirulportfolio.webp" loading="lazy" alt="Amirul Haikal preview"></div>
+                <a class="card project reveal" data-cat="client" href="https://dynoz769.github.io/MIRULPORTFOLIO/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">AH</span><img src="assets/shots/dynoz769-github-io-mirulportfolio-800.webp" srcset="assets/shots/dynoz769-github-io-mirulportfolio-800.webp 800w, assets/shots/dynoz769-github-io-mirulportfolio-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Amirul Haikal website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Client Portfolio</span>
                         <h3>Amirul Haikal</h3>
@@ -592,9 +629,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="personal" href="https://dynoz769.github.io/AdamWeb/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">AI</span><img src="assets/shots/dynoz769-github-io-adamweb.webp" loading="lazy" alt="Adam Iman (v1) preview"></div>
+                <a class="card project reveal" data-cat="personal" href="https://dynoz769.github.io/AdamWeb/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">AI</span><img src="assets/shots/dynoz769-github-io-adamweb-800.webp" srcset="assets/shots/dynoz769-github-io-adamweb-800.webp 800w, assets/shots/dynoz769-github-io-adamweb-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Adam Iman (v1) website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Personal</span>
                         <h3>Adam Iman (v1)</h3>
@@ -602,9 +639,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="personal" href="https://dynoz769.github.io/Test-Page/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">DW</span><img src="assets/shots/dynoz769-github-io-test-page.webp" loading="lazy" alt="Dynoz Web preview"></div>
+                <a class="card project reveal" data-cat="personal" href="https://dynoz769.github.io/Test-Page/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">DW</span><img src="assets/shots/dynoz769-github-io-test-page-800.webp" srcset="assets/shots/dynoz769-github-io-test-page-800.webp 800w, assets/shots/dynoz769-github-io-test-page-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Dynoz Web website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Personal</span>
                         <h3>Dynoz Web</h3>
@@ -612,9 +649,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="personal" href="https://dynoz769.github.io/musicbox/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">PM</span><img src="assets/shots/dynoz769-github-io-musicbox.webp" loading="lazy" alt="Private Music Player preview"></div>
+                <a class="card project reveal" data-cat="personal" href="https://dynoz769.github.io/musicbox/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">PM</span><img src="assets/shots/dynoz769-github-io-musicbox-800.webp" srcset="assets/shots/dynoz769-github-io-musicbox-800.webp 800w, assets/shots/dynoz769-github-io-musicbox-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="Private Music Player website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Personal</span>
                         <h3>Private Music Player</h3>
@@ -622,9 +659,9 @@
                         <div class="tags"><span class="tag">Html</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="personal" href="https://dynoz769.github.io/net/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">RP</span><img src="assets/shots/dynoz769-github-io-net.webp" loading="lazy" alt="React Playground preview"></div>
+                <a class="card project reveal" data-cat="personal" href="https://dynoz769.github.io/net/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">RP</span><img src="assets/shots/dynoz769-github-io-net-800.webp" srcset="assets/shots/dynoz769-github-io-net-800.webp 800w, assets/shots/dynoz769-github-io-net-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="React Playground website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Personal</span>
                         <h3>React Playground</h3>
@@ -632,9 +669,9 @@
                         <div class="tags"><span class="tag">React</span><span class="tag">JavaScript</span></div>
                     </div>
                 </a>
-                <a class="card project" data-cat="personal" href="https://dynoz769.github.io/NetflixByAdam/" target="_blank" rel="noreferrer">
-                    <span class="corner-arrow">&#8599;</span>
-                    <div class="shot"><span class="shot-fallback">N</span><img src="assets/shots/dynoz769-github-io-netflixbyadam.webp" loading="lazy" alt="NetflixByAdam preview"></div>
+                <a class="card project reveal" data-cat="personal" href="https://dynoz769.github.io/NetflixByAdam/" target="_blank" rel="noreferrer" data-cursor="Visit ↗">
+                    <span class="corner-arrow"><span class="ic ic-diag"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></span>
+                    <div class="shot"><span class="shot-fallback">N</span><img src="assets/shots/dynoz769-github-io-netflixbyadam-800.webp" srcset="assets/shots/dynoz769-github-io-netflixbyadam-800.webp 800w, assets/shots/dynoz769-github-io-netflixbyadam-1600.webp 1600w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px" width="1600" height="1000" loading="lazy" decoding="async" alt="NetflixByAdam website preview"></div>
                     <div class="project-body">
                         <span class="card-label">Personal</span>
                         <h3>NetflixByAdam</h3>
@@ -644,81 +681,79 @@
                 </a>
             </div>
             <p class="empty" id="project-empty">No projects match that search.</p>
-            <div class="show-more-wrap"><button class="btn btn-ghost" id="show-more">Show more</button></div>
+            <div class="show-more-wrap"><button class="btn btn-ghost" id="show-more" data-magnetic>Show more</button></div>
         </section>
 
         <section class="section">
-            <div class="section-head reveal"><div><h2>How I work</h2><p>A simple path that keeps collaboration smooth and delivery reliable.</p></div></div>
-            <div class="steps">
-                <div class="card reveal"><span class="step-num">01 &middot; Discover</span><h3>Listen &amp; align</h3><p>Clarify the goal, users, constraints, and success metrics.</p></div>
-                <div class="card reveal"><span class="step-num">02 &middot; Design</span><h3>Shape the solution</h3><p>Sketch flows, wireframes, and pick the right stack for speed.</p></div>
-                <div class="card reveal"><span class="step-num">03 &middot; Build</span><h3>Ship in slices</h3><p>Implement iteratively with testing and fast feedback loops.</p></div>
-                <div class="card reveal"><span class="step-num">04 &middot; Validate</span><h3>Measure &amp; improve</h3><p>Collect data, refine UX, and document for easy handoff.</p></div>
+            <div class="section-head">
+                <div><h2 data-split>How I work</h2><p class="reveal">A simple path that keeps collaboration smooth and delivery reliable.</p></div>
+                
+            </div>
+            <div class="steps" data-stagger="4">
+                <div class="card reveal"><span class="step-num">01</span><span class="card-label">Discover</span><h3 style="margin-top: 8px;">Listen &amp; align</h3><p>Clarify the goal, users, constraints, and success metrics.</p></div>
+                <div class="card reveal"><span class="step-num">02</span><span class="card-label">Design</span><h3 style="margin-top: 8px;">Shape the solution</h3><p>Sketch flows, wireframes, and pick the right stack for speed.</p></div>
+                <div class="card reveal"><span class="step-num">03</span><span class="card-label">Build</span><h3 style="margin-top: 8px;">Ship in slices</h3><p>Implement iteratively with testing and fast feedback loops.</p></div>
+                <div class="card reveal"><span class="step-num">04</span><span class="card-label">Validate</span><h3 style="margin-top: 8px;">Measure &amp; improve</h3><p>Collect data, refine UX, and document for easy handoff.</p></div>
             </div>
         </section>
 
-        <section class="section" id="experience">
-            <div class="section-head reveal"><div><h2>Experience &amp; awards</h2><p>Leadership, competitions, and hands-on delivery that shaped how I work.</p></div></div>
-            <div class="list">
-                <div class="list-item reveal">
-                    <span class="when">2026 | National</span>
-                    <div><h3>Runner-up - Duta Kecil TVET @ KV Influencer</h3><p>Named national-level runner-up (26 July 2026), representing Kolej Vokasional Pasir Mas as a Diploma in Information Technology student.</p></div>
-                </div>
-                <div class="list-item reveal">
-                    <span class="when">2026 | National</span>
-                    <div><h3>Runner-up - Duta Kecil TVET (KPM)</h3><p>Runner-up at the Ministry of Education Malaysia&#x27;s Duta Kecil TVET 2026 competition, held at Kompleks Kraf Kuala Lumpur.</p></div>
-                </div>
-                <div class="list-item reveal">
-                    <span class="when">2024/2025 | Regional</span>
-                    <div><h3>1st Place - Techlympics Zon Timur</h3><p>Cabaran Siasatan Jenayah category, representing KV Pasir Mas at the Eastern Zone level.</p></div>
-                </div>
-                <div class="list-item reveal">
-                    <span class="when">2024 | Innovation</span>
-                    <div><h3>E-Pengarang 3M Innovation Team</h3><p>Part of the college&#x27;s innovation team behind the E-Pengarang 3M project.</p></div>
-                </div>
-                <div class="list-item reveal">
-                    <span class="when">2025 | Leadership</span>
-                    <div><h3>Yang Dipertua MPP</h3><p>Led the student council (MPP KV Pasir Mas 2025/2026) with a focus on digital initiatives.</p></div>
-                </div>
-                <div class="list-item reveal">
-                    <span class="when">2024 | Innovation</span>
-                    <div><h3>Gold Award - IIAR24</h3><p>E-Pengarang 3M at KV Batu Pahat, Johor.</p></div>
-                </div>
-                <div class="list-item reveal">
-                    <span class="when">2024 | Education</span>
-                    <div><h3>Special Award - IIAR24</h3><p>Recognized for education-focused solutions with E-Pengarang 3M.</p></div>
-                </div>
-                <div class="list-item reveal">
-                    <span class="when">2024 | Social Science</span>
-                    <div><h3>Silver Medal - NSIEx</h3><p>Social Science (7/2) category, highlighting user research and impact.</p></div>
-                </div>
-                <div class="list-item reveal">
-                    <span class="when">2024 | Innovation</span>
-                    <div><h3>IMAS Award</h3><p>UiTM Puncak Perdana recognition for applied technology.</p></div>
-                </div>
-                <div class="list-item reveal">
-                    <span class="when">2024 | National</span>
-                    <div><h3>Techlympic Malaysia</h3><p>3rd place, Game Prototype; represented Kelantan at the national level.</p></div>
-                </div>
-                <div class="list-item reveal">
-                    <span class="when">2024 | Leadership</span>
-                    <div><h3>ICT Executive Committee</h3><p>MPP KV Pasir Mas (2024/2025) driving digital literacy efforts.</p></div>
+        <section class="section">
+            <div class="card cta-card glow-always reveal">
+                <span class="eyebrow">Let's work together</span>
+                <h2 data-split style="margin-top: 18px;">Like what you see?</h2>
+                <p class="muted">I take on landing pages, booking systems, payment integrations and internal tools.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="https://wa.me/60113534769" target="_blank" rel="noreferrer" data-magnetic>WhatsApp me <span class="ic ic-arrow"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></span></a>
+                    <a class="btn btn-ghost" href="contact.html" data-magnetic>Send a message</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer-inner">
-            <p>&copy; 2026 Adam Iman. Built with intent and a lot of coffee.</p>
-            <div class="footer-links">
-                <a href="https://github.com/Dynoz769" target="_blank" rel="noreferrer">GitHub</a>
-                <a href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WhatsApp</a>
-                <a href="mailto:Dynoz769@gmail.com">Email</a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a class="brand" href="index.html"><span class="brand-mark">A</span>Adam Iman</a>
+                    <p>Software Engineering student at UPSI building payment gateways, booking systems and web apps for real clients.</p>
+                </div>
+                <div class="footer-col">
+                    <span class="card-label">Pages</span>
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Work</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="about.html">About</a>
+                    <a href="insights.html">Insights</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <span class="card-label">Connect</span>
+                    <a href="https://github.com/Dynoz769" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://wa.me/60113534769" target="_blank" rel="noreferrer">WhatsApp</a>
+                    <a href="mailto:Dynoz769@gmail.com">Email</a>
+                    <a class="resume-download" href="Resume.pdf" download>Resume</a>
+                </div>
+                <div class="footer-col">
+                    <span class="card-label">Local time</span>
+                    <span data-clock>GMT+8</span>
+                    <span>Kelantan, Malaysia</span>
+                    <span>Replies within 24h</span>
+                </div>
+            </div>
+            <div class="wordmark reveal" aria-hidden="true">ADAM IMAN</div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Adam Iman. Built with intent and a lot of coffee.</span>
+                <span>dynoz.site</span>
             </div>
         </div>
     </footer>
 
-<script src="script.js"></script>
+    <button class="to-top" aria-label="Back to top">
+        <svg class="ring" viewBox="0 0 50 50" aria-hidden="true"><defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c4b5fd"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><circle cx="25" cy="25" r="23.5" stroke="rgba(255,255,255,0.08)"/><circle class="ring-fg" cx="25" cy="25" r="23.5"/></svg>
+        <span class="ic"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m5 12 7-7 7 7" /><path d="M12 19V5" /></svg></span>
+    </button>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>
